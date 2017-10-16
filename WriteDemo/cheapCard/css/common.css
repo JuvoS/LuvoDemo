@@ -1,0 +1,32 @@
+
+body{
+
+    background: url("../img/minpic/bg.jpg")no-repeat;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+
+.sec1170{
+    /*给所有的大的区域加1170的宽度，和让他们居中*/
+
+    width: 1170px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.f-r{
+    float: right;
+}
+
+.f-l{
+    float: left;
+}
+
+.margin-auto{
+    margin: auto;
+}
+
+ul li{
+    list-style: none;
+}

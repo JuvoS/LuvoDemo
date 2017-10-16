@@ -1,0 +1,499 @@
+.take0_bg{
+    width: 1170px;
+    height: 700px;
+    position: relative;
+}
+
+.my-rocket{
+    z-index: -2222;
+}
+
+.link-text{
+    z-index: 9999;
+}
+
+
+
+.take_bg-returnlink{
+    position: absolute;
+    top: -27px;;
+}
+
+.link-text{
+    color: aliceblue;
+    display: block;
+    margin-top: -115px;
+    margin-left: 100px ;
+}
+
+.timeMiss{
+    position: absolute;
+    width: 550px;
+    height: 90px;
+    background: chartreuse;
+    top: 210px;
+    left: 310px;
+}
+
+.timeMiss-box{
+    margin-left: 30px;
+    margin-top: 16px;
+}
+
+
+.timeMiss-box>div{
+    float: left;
+}
+.timeMiss-img1{
+    width: 340px;
+    height: 60px;
+    background: firebrick;
+}
+
+.timeMiss-num{
+    width: 50px;
+    height: 60px;
+    background: darkblue;
+}
+.timeMiss-img2{
+    width: 100px;
+    height: 60px;
+    background: blueviolet;
+}
+
+
+
+.take_bg-returnlink{
+    position: absolute;
+    left: 480.5px;
+}
+
+.buyStore{
+    z-index: 9999;
+    position: absolute;
+    top: 250px;
+    left: 275px;
+}
+
+.doorM{
+    left: 30px;
+    z-index: -1;
+    position: absolute;
+    top: 150px;
+}
+
+.doorCat{
+    z-index: 10;
+    position: absolute;
+    top: 160px;
+    left: -50px;
+}
+
+领卷结束======================================
+.take1_bg{
+    width: 1170px;
+    height: 400px;
+    margin-top: 150px;
+}
+
+.huibox{
+    width: 1170px;
+    height: 500px;
+    background: url("../img/minpic/kuang.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+}
+
+.hui-ul{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 1070px;
+    height: 222px;
+}
+
+.hui-li{
+    margin-left: 15px;
+    float: left;
+    width: 223px;
+    height: 222px;
+    background: url("../img/minpic/paceCard.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.hui-pice{
+    width: 60px;
+    font-size: 32px;
+    color: aliceblue;
+    margin-left:48px ;
+    margin-top: 85px;
+}
+
+
+
+
+
+/*领卷开始======================================*/
+
+.getCard{
+    background: url("../img/goodStore/getCard.png");
+    position: absolute;
+    top: 770px;
+    width: 1170px;
+    height: 73px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.cut-panel {
+	width: 100%;
+	text-align: center;
+}
+.cut{
+    width: 1170px;
+}
+/*好店------------------------------*/
+
+.goodStrore{
+    width: 1170px;
+    height: 600px;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+}
+
+.li-goodStore{
+    position: relative;
+    margin-left: 70px ;
+    float: left;
+}
+
+.li-goodStore-img{
+    width: 300px;
+    height: 500px;
+    background: url("../img/goodStore/goodStores.png");
+    background-repeat: no-repeat;
+}
+
+.goodStrore-img-title{
+    color: coral;
+    font-weight: bolder;
+    font-size: 25px;
+    top: 25px;
+    left: 35px;
+    position: absolute;
+    width: 250px;
+    height: 60px;
+
+}
+
+.goodStrore-img-tag{
+    position: absolute;
+    top: 100px;
+    left: 25px;
+}
+
+.button-line
+{
+    font-size: 12px;
+    text-align: center;
+    background: transparent;
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 40px;
+    border: 1px solid;
+    margin: 10px;
+    overflow: visible;
+}
+
+.button-line1{
+    border-color: darkgray;
+    color: #333;
+}
+
+.button-line2{
+    border-color: red;
+    color: red;
+}
+
+.button-line3{
+    border-color: orange;
+    color: orange;
+}
+
+.storeType{
+    position: absolute;
+    color: #333;
+    top: 330px;
+    left: 35px;
+}
+
+.whatType{
+    color: #999;
+    position: absolute;
+    top: 280px;
+    left: 35px;
+}
+
+.whatType-p{
+    float: left;
+}
+
+.goodStrore-price-real{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    top: 360px;
+    left: 28px;
+}
+
+.buy-btn{
+    font-size: 30px;
+    position: absolute;
+    top: 410px;
+    left: 23px;
+}
+
+.right-buy-btn{
+    color: white;
+    text-align: center;
+    background: darkorange;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid;
+    margin: 10px;
+    overflow: visible;
+    line-height: 40px;
+}
+
+.right-buy-car{
+    color: black;
+    text-align: center;
+    background: white;
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 4px;
+    border-color: white;
+    border: 1px solid;
+    margin: 10px;
+    overflow: visible;
+    line-height: 40px;
+}
+
+.in-bg{
+    width: 255px;
+    height: 450px;
+    background: white;
+    position: absolute;
+    top: 23px;
+    left: 23px;
+}
+
+
+.give-service{
+    position: absolute;
+    top: 230px;
+    left: 23px;
+}
+.give-service-pic{
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    color: white;
+    font-weight: bolder;
+    width: 60px;
+    height: 30px;
+    background: mediumpurple;
+}
+
+.buttom-logo{
+    margin: auto;
+    /*background: url("../img/buttomPic/pan.png");*/
+    /*background-repeat: no-repeat;*/
+    /*width: 1170px;*/
+    /*height: 391px;*/
+    position: relative;
+}
+.bottom-logo {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+}
+.bottom-logo img {
+	width: 1170px;
+}
+.buttom-logo-content{
+    width: 1170px;
+    position: relative;
+}
+.there-btn{
+    position: absolute;
+    left: 112px;
+    top: 12px;
+    /*margin-left: 112px; ;
+    /*margin-top: 5px;*/
+    width: 955px;
+    height: 200px;
+}
+
+.the-btn-1{
+    background: url("../img/buttomPic/returnIndex.png");
+    width: 324px;
+    height: 210px;
+    position: absolute;
+    left: 0px;
+    width: 324px;
+    height: 210px;
+}
+
+.the-btn-2{
+    left: 223px;
+    position: absolute;
+    margin-left:140px ;
+    background: url("../img/buttomPic/gotoTop.png");
+    width: 324px;
+    height: 210px;
+}
+
+.the-btn-3{
+    left: 723px;
+    position: absolute;
+    background: url("../img/buttomPic/moreStore.png");
+    width: 324px;
+    height: 210px;
+}
+.bottom-logo-main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 75%;
+	margin: 0 auto;
+}
+.bottom-logo-item {
+	width: 30%;
+}
+.bottom-logo-item a {
+	display: block;
+}
+
+.bottom-logo-item img {
+	width: 100%;
+}
+/**
+ * Juvo.do
+ */
+.boutique-item-panel {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.boutique-item-panel img {
+	width: 1050px;
+}
+.boutique-item-place{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 70px;
+}
+.boutique-item-place-p {
+	width: 940px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.boutique-item-little {
+	width: 220px;
+}
+.boutique-item-little img {
+	width: 220px;
+	margin-bottom: 20px;
+}
+.boutique-item-btn {
+	padding: 10px 30px;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 10px;
+}
+.boutique-getCard-title {
+	width: 100%;
+	text-align: center;
+}
+.boutique-getCard-title img {
+	width: 680px;
+}
+.boutique-bigLogo {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+.boutique-bigLogo-panel {
+	width: 840px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+.boutique-cat {
+	position: absolute;
+}
+.boutique-M {
+	width: 840px;
+	text-align: center;
+	z-index: 12;
+}
+.boutique-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 14;
+}
+.boutique-text img {
+	width: 480px;
+	margin-top: 60px;
+}
+
+.boutique-rocket {
+	margin: 0 auto;
+}
+.boutique-rocket a {
+	display: block;
+}
+.boutique-rocket a:hover .back{
+	width: 270px;
+}
+ .boutique-rocket a img{
+	width: 250px;
+}
+.boutique-rocket-panel {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 16;
+	top: -80px;
+}
+.boutique-cat {
+	position: absolute;
+	z-index: 15;
+}
+.bottom-company {
+	height: 100px;
+	width: 100%;
+	margin-top: 150px;
+	text-align: center;
+	color: #fff;
+}
+.bottom-company-copy {
+	font-size: 12px;
+	margin-bottom: 10px;
+}

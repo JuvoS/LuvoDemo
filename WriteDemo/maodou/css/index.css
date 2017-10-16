@@ -1,0 +1,642 @@
+body,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+select,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%
+}
+
+table {
+	border-collapse: collapse
+}
+
+body {
+	font-family: Microsoft YaHei;
+	font: 12px/1.5 Microsoft YaHei, arial, helvetica, sans-serif;
+	font-style: normal;
+	-webkit-font-feature-settings: normal;
+	font-feature-settings: normal;
+	font-variant: normal;
+	font-weight: 400;
+	font-stretch: normal;
+	font-size: 12px
+}
+
+li,
+ul {
+	list-style: none
+}
+
+a {
+	text-decoration: none
+}
+
+button,
+input,
+submit,
+textarea {
+	outline: none;
+	box-shadow: none;
+	font-weight: 400
+}
+
+.clearfix {
+	zoom: 1
+}
+
+.clearfix:after {
+	content: ".";
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: block;
+	clear: both
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.tl {
+	text-align: left
+}
+
+.tc {
+	text-align: center
+}
+
+.tr {
+	text-align: right
+}
+
+.ellipse {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+img {
+	border: 0
+}
+
+em,
+i,
+strong {
+	font-style: normal
+}
+
+#car-recommender {
+	padding: 30px 0;
+	background: #fff
+}
+
+#car-recommender .recommender-wrap {
+	width: 1200px;
+	margin: 0 auto
+}
+
+#car-recommender h3 {
+	font-size: 22px;
+	color: #3f4359;
+	line-height: 30px;
+	font-weight: 400;
+	overflow: hidden
+}
+
+#car-recommender .best-recommend {
+	float: left;
+	width: 789px
+}
+
+#car-recommender .best-list {
+	margin-top: 20px
+}
+
+#car-recommender .best-list .item {
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	width: 243px;
+	height: 130px;
+	padding: 20px 5px 22px 21px;
+	background: #fff;
+	box-sizing: border-box;
+	border: 1px solid #f1f4f7;
+	box-shadow: 2px 2px 6px 0 rgba(63, 67, 89, .03)
+}
+
+#car-recommender .best-list .item:hover {
+	box-shadow: 0 1px 6px 0 rgba(63, 67, 89, .12)
+}
+
+#car-recommender .best-list .item:hover .car-photo {
+	left: -8px
+}
+
+#car-recommender .best-list .item .car-photo {
+	position: relative;
+	left: 0;
+	float: right;
+	width: 136px;
+	height: 88px;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear
+}
+
+#car-recommender .best-list .item .car-photo img {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+#car-recommender .best-list .item .car-info {
+	position: absolute;
+	left: 21px;
+	top: 20px;
+	width: 140px;
+	overflow: hidden
+}
+
+#car-recommender .best-list .item .car-info .car-name {
+	padding-top: 5px;
+	font-size: 18px;
+	color: #3f4359;
+	line-height: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+#car-recommender .best-list .item .car-info .pre-price {
+	margin-top: 3px;
+	font-size: 14px;
+	color: #ff7414;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+#car-recommender .best-list .item .car-info .car-tag {
+	display: inline-block;
+	margin-top: 6px;
+	padding: 3px 4px 4px;
+	background-image: -webkit-linear-gradient(left, #ff7414, #fb4a14);
+	background-image: linear-gradient(90deg, #ff7414, #fb4a14);
+	font-size: 12px;
+	color: #fff;
+	line-height: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+#car-recommender .quick-recommend {
+	float: right;
+	width: 390px;
+	overflow: hidden
+}
+
+#car-recommender .quick-recommend .entry-all {
+	float: right;
+	position: relative;
+	font-size: 14px;
+	color: #ff7414
+}
+
+#car-recommender .brand-list {
+	margin-top: 26px;
+	margin-right: -30px
+}
+
+#car-recommender .brand-list .item {
+	float: left;
+	width: 40px;
+	margin-right: 30px;
+	text-align: center
+}
+
+#car-recommender .brand-list .item:hover .brand-photo {
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0)
+}
+
+#car-recommender .brand-list .item:hover .text {
+	color: #ff7414
+}
+
+#car-recommender .brand-list .item .brand-photo {
+	width: 40px;
+	height: 40px;
+	-webkit-transition: -webkit-transform .2s linear;
+	transition: -webkit-transform .2s linear;
+	transition: transform .2s linear;
+	transition: transform .2s linear, -webkit-transform .2s linear;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0, 0, 0)
+}
+
+#car-recommender .brand-list .item .brand-photo img {
+	display: inline-block;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle
+}
+
+#car-recommender .brand-list .item .text {
+	margin-top: 8px;
+	font-size: 16px;
+	color: #3f4359;
+	line-height: 22px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+#car-recommender .price-list {
+	margin-top: 20px;
+	margin-right: -53px;
+	white-space: nowrap
+}
+
+#car-recommender .price-list .item {
+	display: inline-block;
+	margin-right: 42px;
+	font-size: 16px;
+	color: #3f4359;
+	line-height: 22px
+}
+
+#car-recommender .price-list .item:hover {
+	color: #ff7414
+}
+
+#hotcar {
+	padding-top: 42px;
+	background: #f9f9fc
+}
+
+#hotcar .hotcar-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden
+}
+
+#hotcar .hot-title {
+	margin-bottom: 40px;
+	font-size: 22px;
+	color: #3f4359;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center
+}
+
+#hotcar .cars {
+	margin-right: -20px
+}
+
+#hotcar .cars .car-item {
+	float: left;
+	position: relative;
+	width: 580px;
+	height: 298px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: #fff;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition: -webkit-transform .2s linear;
+	transition: -webkit-transform .2s linear;
+	transition: transform .2s linear;
+	transition: transform .2s linear, -webkit-transform .2s linear
+}
+
+#hotcar .cars .car-item:hover {
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0)
+}
+
+#hotcar .cars .car-item:hover:after {
+	opacity: 1
+}
+
+#hotcar .cars .car-item:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	box-shadow: 0 2px 12px 0 rgba(63, 67, 89, .15);
+	opacity: 0
+}
+
+#hotcar .cars .car-item .car-photo {
+	display: block
+}
+
+#hotcar .cars .car-item .car-photo img {
+	display: block;
+	width: 58%;
+	height: 183px;
+	margin: 0 auto;
+}
+
+#hotcar .cars .car-item .car-detail {
+	padding: 12px 20px 0
+}
+
+#hotcar .cars .car-item .car-detail .car-info .info {
+	display: block;
+	height: 44px;
+	font-size: 16px;
+	color: #3f4359;
+	line-height: 22px;
+	text-align: justify;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+#hotcar .cars .car-item .car-detail .car-price {
+	height: 30px;
+	margin-top: 5px;
+	overflow: hidden
+}
+
+#hotcar .cars .car-item .car-detail .car-price .pre-price {
+	float: left;
+	font-size: 14px;
+	color: #ff7414;
+	line-height: 30px
+}
+
+#hotcar .cars .car-item .car-detail .car-price .pre-price .hot {
+	font-size: 22px;
+	vertical-align: baseline
+}
+
+#hotcar .cars .car-item .car-detail .car-price .for-month {
+	float: right;
+	font-size: 14px;
+	color: #8d91ac;
+	line-height: 37px
+}
+
+#hotcar .cars .car-item .info-status {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 72px;
+	height: 72px
+}
+
+#hotcar .cars .car-item .info-status.s-new {
+	background: url(//sta.guazistatic.com/xinche_web/images/car-tag-1.9ea6c9a1.png) no-repeat 50%
+}
+
+#hotcar .cars .car-item .info-status.s-pop {
+	background: url(//sta.guazistatic.com/xinche_web/images/car-tag-2.60114afd.png) no-repeat 50%
+}
+
+#hotcar .cars .car-item .info-status.s-hot {
+	background: url(//sta.guazistatic.com/xinche_web/images/car-tag-3.3922b33a.png) no-repeat 50%
+}
+
+#hotcar .cars .car-item .info-status.s-zero {
+	background: url(//sta.guazistatic.com/xinche_web/images/car-tag-4.9200e9db.png) no-repeat 50%
+}
+
+#hotcar .cars .car-item .info-status.s-supply {
+	background: url(//sta.guazistatic.com/xinche_web/images/car-tag-5.c693d527.png) no-repeat 50%
+}
+
+#hotcar .show-all {
+	padding: 20px 0 40px;
+	text-align: center
+}
+
+#hotcar .show-all .show {
+	display: inline-block;
+	width: 300px;
+	height: 50px;
+	border: 1px solid #ff7414;
+	border-radius: 2px;
+	font-size: 16px;
+	color: #ff7414;
+	line-height: 50px
+}
+
+#hotcar .show-all .show:hover {
+	background: #ff7414;
+	color: #fff;
+	box-shadow: 0 0 10px 0 rgba(251, 116, 20, .4)
+}
+
+
+/*顶部图片*/
+
+.adown-body {
+	background: url(../img/TopBanner/158276_1920_350_002-web.jpg) no-repeat center 0
+}
+
+.bgce {
+	position: relative;
+	height: 740px
+}
+
+/*.bgce a {
+	font-size: 24px;
+	font-family: microsoft yahei;
+	text-indent: 75px;
+	height: 64px;
+	line-height: 64px;
+	width: 240px;
+	display: block;
+	position: absolute;
+	left: 111px;
+	text-decoration: none;
+	background-image: url(//sta.guazistatic.com/c2c_web/icon-3.b35180094047f23a721e3419e0bc5fca.png);
+	background-repeat: no-repeat;
+	background-color: #22ac38;
+	color: #fff;
+	border-radius: 30px
+}*/
+
+.bgce .top-venus-back {
+	position: absolute;
+	width: 100%;
+}
+.bgce .top-venus-back .top-venus-back-panel {
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	width: 200px;
+}
+.bgce .top-venus-back .top-venus-back-panel .venus-back-btn {
+	display: block;
+}
+.bgce .top-venus-back .top-venus-back-panel .venus-back-btn img {
+	width: 200px;
+	height: 120px;
+}
+
+/**
+ * 交易动态
+ */
+.section-new {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /*background: url("../img/news/tuijian_bg.png") no-repeat center center;*/
+   	/*border: 1px solid #E5E5E5;*/
+    position: relative;
+}
+.section-new .hd ul {
+    *left: 50%;
+    *position: absolute;
+    *bottom: 0;
+}
+
+.section-new .hd li:first-child {
+    margin-left: 0;
+}
+
+.section-new .hd li {
+    display: inline-block;
+    *display: inline;
+    *float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background-color: #E6E6E6;
+    margin-left: 11px;
+    text-indent: -9999px;
+    font-size: 0;
+    zoom: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+.news_box {
+    width: 1160px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: 22px;
+    padding: 0 20px;
+}
+
+.news_box .tit {
+    width: 80px;
+    font-size: 16px;
+    color: #4d4d4d;
+    padding-left: 40px;
+    margin-top: -1px;
+    background: url(../img/news/news_icon.png) no-repeat left center;
+}
+
+.news_box .news_slide {
+    width: 1000px;
+    height: 30px;
+}
+
+.news_slide .bd ul {
+    width: 1000px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.news_slide .bd ul li {
+    float: left;
+    padding: 0 20px;
+    width: 210px;
+    height: 30px;
+    position: relative;
+}
+
+.news_slide .bd ul li a {
+    display: block;
+    text-align: center;
+    color: #4c4c4c;
+    padding-right: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news_slide .bd ul li.font_sty a {
+    color: #f12829;
+}
+
+.news_slide .bd ul li:before {
+    content: "|";
+    display: block;
+    height: 14px;
+    font-size: 14px;
+    color: #ADAEB2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.news_slide .bd ul li:first-child:before {
+    content: "";
+}
+
+.section-new .news_slide .hd {
+    /*height: 30px;*/
+    width: 20px;
+    left: 1180px;
+}
+
+.news_slide .arrow {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
+
+.news_slide .arrow a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url(../img/news/arrow_tp.png) no-repeat;
+}
+
+.news_slide .arrow .next {
+    background: url(../img/news/arrow_bt.png) no-repeat;
+}
