@@ -1,0 +1,275 @@
+.footer {
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    padding: 15px 0;
+    position: relative;
+    background: #ECECEC;
+}
+
+.footer ul {
+    width: 1184px;
+    margin: 0 auto;
+}
+
+.footer li {
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    display: block;
+    border-left: 1px solid #aaa;
+}
+
+.footer li:first-child {
+    border-left: none;
+}
+
+.footer li a {
+    padding: 0 15px;
+    color: #888;
+}
+
+.footer li a:hover {
+    text-decoration: underline;
+}
+
+/**å¼¹å‡ºæç¤ºæ¡†**/
+.tcbox_yy {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.tcbox_vtip {
+    background-color: #ffffff;
+    height: 250px;
+    left: 50%;
+    margin-left: -310px;
+    margin-top: -125px;
+    opacity: 1 !important;
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    width: 620px;
+    z-index: 2147483647;
+}
+
+.tcbox-ts {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.tcbox-ts img {
+    display: inline-block;
+    margin-bottom: -18px;
+    margin-right: 10px;
+}
+
+.tcbox-ts p {
+    color: #666666;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.tcbox-ts p label {
+    color: #fc7d28;
+}
+
+.tcbox-qr {
+    background: #fc7d28 none repeat scroll 0 0;
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin: 45px auto 0;
+    text-align: center;
+    width: 180px;
+}
+
+.header-index ul li a .icon-new {
+    margin-top: 5px;
+}
+
+.mj-guanjia {
+    display: none;
+    position: relative;
+    padding: 55px 0;
+    width: 485px;
+    background: #fff;
+    text-align: center;
+}
+
+.mj-guanjia p {
+    padding: 35px 20px;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+
+.mj-guanjia p em {
+    color: #0066FF;
+}
+
+.mj-guanjia > a {
+    color: #fc7d28;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.mj-guanjia .tcbox-qr {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.mj-guanjia .tcbox-qx {
+    font-size: 14px;
+    border: 1px solid #ccc;
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 20px auto 0px;
+    color: #666;
+    background: #f8f8f8;
+}
+
+.logininfo {
+    padding-top: 26px;
+    position: relative
+}
+
+.header .header-right a.login-name {
+    text-align: right;
+    display: block;
+    padding-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+
+}
+
+.header .header-right a.login-name em {
+    white-space: nowrap;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    max-width: 156px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+.mj-feedback {
+    display: none;
+    position: relative;
+    width: 608px;
+    height: 406px;
+    background: #fff;
+}
+
+.mj-feedback .mj-fTitle {
+    display: block;
+    padding: 15px 0 0 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.mj-feeCon {
+    width: 480px;
+    margin: 35px auto;
+}
+
+.mj-feeCon > p {
+    line-height: 25px;
+    font-size: 12px;
+    color: #666;
+}
+
+.mj-feeCon textarea {
+    margin-top: 10px;
+    padding: 15px 0 0 15px;
+    width: 465px;
+    height: 110px;
+    border: solid 1px #cecece;
+    outline: none;
+    resize: none;
+}
+
+.mj-feeCon input {
+    margin: 15px 0;
+    padding-left: 15px;
+    width: 285px;
+    height: 36px;
+    border: solid 1px #cecece;
+    line-height: 36px \9;
+    outline: none;
+}
+
+.mj-feeCon a {
+    display: block;
+    width: 148px;
+    height: 35px;
+    background: #ff6700;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ end*/
+
+.fix-right {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 9999;
+}
+
+.fix-right a {
+    display: block;
+    padding: 5px 12px;
+    line-height: 20px;
+    color: #fc7d28;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #f2f2f2;
+    background: #ffffff;
+}
+
+.fix-right .mj-returnT, .fix-right .backtop {
+    display: none;
+}
+
+.icon19 {
+    background: url("../../img/icon19-hover.png") no-repeat;
+    width: 26px;
+    height: 24px;
+    display: block;
+}
+
+.icon20 {
+    background: url(../../img/login/icon20-hover.png) no-repeat;
+    width: 23px;
+    height: 20px;
+    display: block;
+}
+
+.download {
+    background: url("../../img/icon/icon22.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: sub;
+}

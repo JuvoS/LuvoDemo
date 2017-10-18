@@ -1,0 +1,40 @@
+/* media */
+
+
+@media only screen and (min-width: 1px) and (max-width: 1180px){
+    .mj-header{
+        width: 1160px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mj-header_top{
+        width: 1160px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mj-bagc{
+        width: 1160px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mj-footer{
+        width: 1160px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .section{
+        width: 1160px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mj-sefooter{
+        width: 1160px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .mj-reHeader{
+        width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}

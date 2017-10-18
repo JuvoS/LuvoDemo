@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/page/common.css" />
+		<link rel="stylesheet" href="../css/page/footer.css" />
+		<link rel="stylesheet" href="../css/page/login.main.css" />
+	</head>
+	<body>
+
+<div id="body" class="activeAnimate"><div class="header"> <div class="wrap clearfix"> <div class="fl logo"><a href="/"><img src="../img/index/header-logo.png"></a></div> <div class="fr">代理交流群：245945931 &nbsp;&nbsp; | &nbsp;&nbsp; 商标申请人交流群：643903499</div> </div> </div> <div class="login-main-bg"> <div class="login-main clearfix">  <div class="fr login-box login-yanzhengma" style="display: none"> <div class="tips"></div> <div class="login-title clearfix"> <h3 class="fl">验证码登录</h3> <a href="javascript:;" class="fr pwd-login">密码登录</a> </div> <div class="form"> <div class="login-input name"> <b></b> <input type="text" placeholder="手机号码" name="phone" onkeyup="if(event.keyCode == 13){CHOFN.loginSubmit(this,0)};"> <i></i> </div> <div class="codebox clearfix" style="margin-top: 15px; margin-bottom: 30px;"> <div class="login-input code fl"> <b></b> <input type="text" placeholder="输入验证码" name="code" onkeyup="if(event.keyCode == 13){CHOFN.loginSubmit(this,0)};"> </div> <span class="btn-code fr" onclick="CHOFN.acquireCode(this);">获取验证码</span> </div> <div class="remember"><i class="radiobox"></i> 下次自动登录</div> <button class="btn-submit" onclick="CHOFN.loginSubmit(this,0);">登 录</button> </div> <div class="loginbox-footer t-right"> <a href="/login/register/">免费注册</a> 已有CRM账号？<a href="/login/index">点这里</a> </div> </div>  <div class="fr login-box login-mima"> <div class="tips"></div> <div class="login-title clearfix"> <h3 class="fl">密码登录</h3> <a href="javascript:;" class="fr code-login">验证码登录</a> </div> <form id="form1" name="form1" method="post" action="http://nav.chaofan.wang/user/login/"> <input name="system" type="hidden" value="monitor"> <input name="onurl" type="hidden" value="http://www.biaoju01.com/manage/archives/"> <div class="form"> <div class="login-input name"> <b></b> <input type="text" name="username" placeholder="请输入手机/邮箱/用户名" onkeyup="if(event.keyCode == 13){CHOFN.loginSubmit(this,1)};"> <i></i> </div> <div class="login-input pwd" style="margin-top: 15px; margin-bottom: 30px;"> <b></b> <input type="password" name="password" placeholder="请输入密码" onkeyup="if(event.keyCode == 13){CHOFN.loginSubmit(this,1)};"> </div> <div class="remember"><i class="radiobox"></i> 下次自动登录</div> <a href="javascript:;" class="btn-submit" onclick="CHOFN.loginSubmit(this,1);">登 录</a> </div> </form> <div class="loginbox-footer t-right"> <a href="/login/forget/">忘记密码</a> &nbsp;&nbsp;&nbsp; <a href="/login/register/">免费注册</a> </div> </div> </div> </div>  <div class="footer"> <!----> <ul class="clearfix"> <li><a href="/introduce/survey/" target="_blank">产品介绍</a></li> <li><a href="/introduce/manage1/" target="_blank">商标管理介绍</a></li> <li><a href="/introduce/history/" target="_blank">成长事记</a></li>  <span class="fr" style="color: #999;">©2017 飙局</span> </ul> </div>   <div class="fix-right"> <a href="javascript:void(0);" class="feedback mj-fees" id="jFanKui"><i class="icon20"></i>反馈</a> <a href="javascript:void(0);" class="backtop"><i class="icon19"></i>顶部</a> </div>  <div style="display: none"> <div class="mj-guanjia"> <span class="ms-close mj-close"></span> <p>请先完善CRM系统里的邮箱</p> <a class="tcbox-qr" href="" target="_blank">去完善</a> <a class="tcbox-qx">取消</a> </div> </div> <div id="mj-feedback-box" style="display: none"> <div class="mj-feedback" style="display: block;height: auto;">   <div class="mj-feeCon"> <p>您好，我们团队每天都会整理分析你给的建议，无论是好的坏的。飙局的进步，离不开你的支持。 如果你有一分钟时间，请立刻告诉我们团队你的想法吧。 </p> <textarea name="feedback" onfocus="if(this.value=='意见反馈（500个汉字内）' || this.value=='请填写您的意见'){this.value=''}; $('#em4email').html('');" onblur="if(this.value==''){this.value='意见反馈（500个汉字内）'}">意见反馈（500个汉字内）</textarea> <input name="email" type="text" value="您的Email地址" onfocus="if(this.value=='您的Email地址'){this.value='';$('#em4email').html('')}" onblur="if(this.value==''){this.value='您的Email地址'}"> <em id="em4email"></em> <a id="submit" href="javascript:void(0);" class="jFanKuiSubmit">提交反馈</a> </div> </div> </div> </div>
+
+<script src="/Static/website-0.1/scripts/core/sea.js?_v=2.0.8"></script>
+<script src="/Static/website-0.1/scripts/common/config.js?_v=2.0.8"></script>
+<script>
+    seajs.use(['page/login/login.main'], function (main) {
+        var _json = {
+            'onurl': 'http://www.biaoju01.com/manage/archives/',
+            'system': 'monitor',
+
+            'data' : {
+                'memberType' : "0",
+                'uc_nickname' : "",
+                'uc_key' : "",
+                'mailcount' : "0",
+                'pushTotal' : "0",
+                'nav_url' : "http://nav.chaofan.wang/user/login/",
+                'account': ''
+            }
+        };
+
+        main.initTable(_json);
+        main.initBind();
+    });
+</script>
+
+</body>
+</html>

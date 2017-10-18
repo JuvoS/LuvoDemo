@@ -1,0 +1,106 @@
+/* css reset*/
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    font: 12px "微软雅黑";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input, textarea, button {
+    outline: none
+}
+
+input, textarea, keygen, select, button {
+    font: 12px "微软雅黑";
+}
+
+/* css common */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right;
+}
+
+.t-left {
+    text-align: left
+}
+
+.t-right {
+    text-align: right
+}
+
+.wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+    padding-right: 7px;
+    vertical-align: top;
+}
+
+.icon6 {
+    background: url("../img1.7/icon6.png") no-repeat;
+    height: 13px;
+    width: 13px;
+}
+
+.active .icon6 {
+    background: url("../img1.7/icon6-active.png") no-repeat;
+    height: 13px;
+    width: 13px;
+}
+.hide{ display: none}
+.phcolor{ color: #999}
+
+#listRows{
+
+}

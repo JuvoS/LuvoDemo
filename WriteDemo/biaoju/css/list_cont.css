@@ -1,0 +1,882 @@
+
+.conr_search .conr_search_input {
+    margin-left: 10px;
+    float: left;
+    border: 1px solid #cdcdcd;
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 2px;
+    width: 527px;
+    height: 43px;
+    line-height: 43px;
+}
+
+.conr_search .conr_search_input input {
+    width: 88%;
+    padding-left: 20px;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+}
+
+.conr_search .conr_search_input img {
+    position: relative;
+    top: 8px;
+}
+
+.conr_search .conr_search_btn {
+    margin-left: -1px;
+    float: left;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    background: #fe6905;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.conr_search .conr_search_gjbtn {
+    margin-left: 10px;
+    float: left;
+    box-shadow: 1px 1px 1px 1px #f2f2f2;
+    width: 100px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #222;
+}
+
+.con_lfdiv {
+    clear: both;
+    height: 40px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 20px;
+}
+
+.con_lfdiv .con_rleft {
+    font-size: 12px;
+    color: #222;
+    float: left;
+    margin-top: 16px;
+}
+
+.con_lfdiv .con_rleft span {
+
+}
+
+.con_lfdiv .con_rleft label {
+    color: #fc6c00;
+    max-width: 200px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    text-overflow: ellipsis;
+}
+
+.con_lfdiv .con_rright {
+    float: right;
+}
+
+.con_lfdiv .con_rright .paixu {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+
+.con_lfdiv .con_rright .paixu a {
+    padding: 0 10px;
+    display: block;
+    float: left;
+    border-left: 1px solid #ddd;
+}
+
+.con_lfdiv .con_rright .paixu a.active, .con_lfdiv .con_rright .paixu a:hover {
+    background: #fc6c00;
+    color: #fff;
+}
+
+.con_lfdiv .con_rright ul li {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    position: relative;
+}
+
+.con_lfdiv .con_rright ul li a {
+    display: block;
+    height: 30px;
+}
+
+.con_lfdiv .con_rright ul li.active_mg {
+    width: 70px;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+}
+
+.con_rright .active_mg.active, .con_rright .active_mg.hover {
+    background: #fc6c00;
+}
+
+.con_rright .active_mg1 {
+    background: url(../img1.7/icon8.png) no-repeat center center;
+}
+
+.con_rright .active_mg1.active, .con_rright .active_mg1.hover {
+    background: url(../img1.7/icon8-hover.png) no-repeat center center #fc6c00;
+}
+
+.con_rright .active_mg2 {
+    background: url(../img1.7/icon9.png) no-repeat center center;
+}
+
+.con_rright .active_mg2.active, .con_rright .active_mg2.hover {
+    background: url(../img1.7/icon9-hover.png) no-repeat center center #fc6c00;
+}
+
+.active_mg3 {
+    background: url(../img1.7/icon22.png) no-repeat center center;
+}
+
+.con_rright .active_mg3.active, .con_rright .active_mg3.hover {
+    background: url(../img1.7/icon22-hover.png) no-repeat center center #fc6c00;
+}
+
+.active_mg4 {
+    background: url(../img1.7/icon21.png) no-repeat center center;
+}
+
+.con_rright .active_mg4.active, .con_rright .active_mg4.hover {
+    background: url(../img1.7/icon21-hover.png) no-repeat center center #fc6c00;
+}
+
+.con_rright .active_mg4.down {
+    background: url(../img1.7/icon21-1.png) no-repeat center center;
+}
+
+.con_rright .active_mg4.down.active, .con_rright .active_mg4.down.hover {
+    background: url(../img1.7/icon21-1-hover.png) no-repeat center center #fc6c00;
+}
+
+.con_rright .active_mg4.up {
+    background: url(../img1.7/icon21-2.png) no-repeat center center;
+}
+
+.con_rright .active_mg4.up.active, .con_rright .active_mg4.up.hover {
+    background: url(../img1.7/icon21-2-hover.png) no-repeat center center #fc6c00;
+}
+
+.con_lfdiv .con_rright ul li.active a, .con_lfdiv .con_rright ul li.hover a {
+    color: #fff;
+}
+
+.up-excel-box {
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 400px;
+    border: 1px solid #ccc;
+    background: #fff;
+    z-index: 100;
+    padding: 15px 0;
+    display: none;
+}
+
+.up-excel-box i {
+    position: absolute;
+    top: -8px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #aaa;
+}
+
+.up-excel-box i b {
+    position: absolute;
+    top: 1px;
+    right: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+}
+
+.up-excel-box h3 {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #ccc;
+    margin: 0 15px;
+}
+
+.up-excel-box h3 .icon-close {
+    background: url(../img1.7/icon14.png) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+}
+
+.excel-over {
+    max-height: 375px;
+    padding: 0 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.excel-list {
+    width: 100%;
+    height: 25px;
+    margin-top: 12px;
+}
+
+.excel-list-box {
+    width: 250px;
+    height: 25px;
+    float: left;
+    position: relative;
+    background: url("../img1.7/excel.png") no-repeat left center;
+    padding-left: 30px;
+}
+
+.excel-list-box h1 {
+    position: absolute;
+    width: 250px;
+    background: #f5f5f5;
+    display: block;
+    bottom: 0;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.excel-list-box h1 span {
+    background: #4F8B36;
+    display: block;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.excel-list-box p {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 250px;
+    height: 20px;
+    text-overflow: ellipsis;
+}
+
+.con_lfdiv .con_rright ul li.active a, .con_lfdiv .con_rright ul li .excel-list a {
+    float: right;
+    color: #4F8B36;
+    text-decoration: underline;
+}
+
+.con_lfdiv .con_rright ul li.active a, .con_lfdiv .con_rright ul li.hover .excel-list a {
+    color: #4F8B36;
+}
+
+.con_lfdiv .con_rright ul li .excel-list a.active, .con_lfdiv .con_rright ul li.hover .excel-list a.active {
+    color: rgb(85, 26, 139);
+}
+
+.con-right .conr_list {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 16px 0 10px 0;
+    overflow: hidden;
+}
+
+.con-right .conr_list.list_active {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    -moz-box-shadow: 0px 1px 14px #cdcdcd;
+    -webkit-box-shadow: 0px 1px 14px #cdcdcd;
+    box-shadow: 0px 1px 14px #cdcdcd;
+    /*box-shadow: 1px 1px 1px 1px #e0e0e0;*/
+}
+
+.con-right .conr_list .list-pics {
+    width: 135px;
+    position: relative;
+    height: 94px;
+    padding-left: 40px;
+    padding-right: 20px;
+    float: left;
+}
+
+.pic-list-intro {
+    width: 772px;
+}
+
+.container-mq .pic-list-intro {
+    width: 983px;
+}
+
+.container-gjss .pic-list-intro {
+    width: 983px;
+}
+
+.con-right .conr_list .pic-list-intro p {
+    float: left;
+    padding-right: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.pic-list-top p {
+    font-size: 14px;
+}
+
+.pic-list-bottom p span {
+    color: #666666;
+}
+.pic-list-bottom p span del{
+    color: red;
+}
+.text-right {
+    text-align: right
+}
+
+.pic-list-intro .list-proposer {
+    max-width: 218px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pic-list-intro .list-proposer a {
+    text-decoration: underline
+}
+
+.container-mq .pic-list-intro .list-proposer {
+    max-width: 321px;
+}
+
+.container-gjss .pic-list-intro .list-proposer {
+    max-width: 321px;
+}
+
+.pic-list-intro .hover-status {
+    max-width: 120px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-pics img {
+    width: 135px;
+    height: 94px;
+    vertical-align: top
+}
+.con-right .conr_list .list-pics .a-pic{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 135px;
+    height: 94px;
+    line-height: 94px;
+    text-align: center;
+    background: url('../img1.7/opacity.png');
+    color: #fff;
+    font-size: 14px;
+    display: none;
+    cursor: pointer;
+}
+
+#img {
+    padding: 20px;
+}
+
+#img div {
+    max-width: 760px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+#img a {
+    color: #1f84cd;
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+}
+.con-right .list-pics .conr_zs {
+    font-size: 12px;
+    color: #fff;
+    background: #fc6c00;
+    border: 1px solid #fc6c00;
+    width: 43px;
+    height: 18px;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    text-align: center;
+}
+
+.con-right .list-pics i {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+.conr_pimg {
+    padding-right: 20px;
+}
+
+.conr_pimg a {
+    padding: 0 10px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid #ddd;
+}
+
+.conr_pimg a.btn-style1 {
+    /*width: 45px;*/
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid #fc6c00;
+    color: #fc6c00;
+}
+
+.conr_pimg a:hover, .btn-style1:hover {
+    border: 1px solid #fc6c00;
+    color: #fff !important;
+    background: #fc6c00;
+}
+
+.pic-list-intro .list-group {
+    height: 25px;
+    line-height: 25px;
+    max-width: 745px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.container-mq .pic-list-intro .list-group {
+    max-width: 963px;
+}
+
+.container-gjss .pic-list-intro .list-group {
+    max-width: 963px;
+}
+
+.btn-default {
+    color: #fc6c00;
+    border: 1px solid #fc6c00;
+    padding: 2px 0;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 2px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.hover-status {
+    cursor: pointer
+}
+
+.icon11 {
+    background: url("../img1.7/icon11.png") no-repeat;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.icon12 {
+    background: url("../img1.7/icon12.png") no-repeat;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.con-right .conr_list li p label {
+    color: #fe6905;
+}
+
+.con-right .conr_list li p div {
+    width: 14px;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.con-right .conr_list li .conr_pimg, .con-right .conr_list li .conr_pimg a {
+    color: #666;
+    font-size: 12px;
+}
+
+.con-right .conr_list li .conr_pimg img {
+    position: relative;
+    top: 8px;
+    right: 6px;
+}
+
+.con-right .conr_listdiv {
+    width: 125px;
+
+}
+
+/*list2*/
+.con-right .conr_prompt {
+    font-size: 14px;
+    color: #444;
+    border: 1px solid #efefef;
+    background: #f9f9f9;
+    height: 63px;
+    line-height: 63px;
+    margin-top: 24px;
+}
+
+.con-right .conr_prompt label {
+    color: #fe6905;
+}
+
+.con-right .conr_prompt img {
+    margin: 0 18px 0 25px;
+    position: relative;
+    top: 10px;
+}
+
+.con-right .conr_tab {
+    width: 100%;
+    font-family: "微软雅黑";
+    position: relative;
+}
+
+.con-right .conr_tab table {
+    width: 100%
+}
+
+.con-right .conr_tab td {
+    font-size: 14px;
+    color: #222;
+    padding: 0 10px;
+    position: relative;
+}
+
+.con-right .conr_tab td.checkbox {
+    position: relative;
+}
+
+.con-right .conr_tab td.checkbox i {
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.con-right .conr_tab td.checkbox.active i {
+    background: url("../img1.7/icon2.png") center center no-repeat #fff;
+}
+
+.con-right .conr_tab td.checkbox i input {
+    width: 18px;
+    line-height: 18px;
+    height: 18px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.con-right .conr_tab td .conr_zs {
+    font-size: 12px;
+    color: #fc6c00;
+    border: 1px solid #fc6c00;
+    padding: 2px 5px;
+    line-height: 1.5;
+    border-radius: 2px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    text-align: center;
+    margin-left: -22px;
+}
+
+.con-right .conr_tab td a {
+    color: #357fcc;
+}
+
+.con-right .conr_tab td a.btn-default {
+    color: #fc6c00;
+    width: 60px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.con-right .conr_tab thead tr {
+    background: #f9f9f9;
+    height: 40px;
+    line-height: 40px;
+}
+
+.con-right .conr_tab thead tr td {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.con-right .conr_tab tr {
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.con-right .conr_tab tbody tr {
+    height: 38px;
+    line-height: 38px;
+}
+
+.con-right .conr_tab tbody tr:hover, .con-right .conr_tab tbody tr.hover {
+    background: #fff4ee;
+    border: 1px solid #e8e8e8;
+}
+
+.con-right .conr_tab td.td-lang {
+    position: relative;
+    width: 300px;
+}
+
+.con-right .conr_tab td.td-lang span {
+    width: auto !important;
+    min-width: 290px !important;
+    max-width: 500px !important;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 38px;
+    z-index: 1;
+    background: #fff;
+    padding-right: 10px;
+}
+
+.con-right .conr_tab tbody tr:hover span, .con-right .conr_tab tbody tr.hover span {
+    background: #fff4ee;
+}
+
+.con-right .conr_tab .conr_tab_but {
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+    color: #222;
+    width: 60px;
+    display: inline-block;
+}
+
+.conr_showdiv {
+    width: 492px;
+    height: auto;
+    font-size: 12px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    background: #fff4ee;
+    position: absolute;
+    right: -1px;
+    top: 38px;
+    display: none;
+    z-index: 9999;
+}
+
+.showup {
+    bottom: 38px;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+    top: auto;
+}
+
+.con-right .conr_tab .conr_tab_div {
+
+}
+
+.conr_tab_div .conr_tab_top {
+    width: 493px;
+    background: #fff4ee;
+    height: 38px;
+}
+
+.conr_tab .conr_tab_div .conr_tabdiv_top {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 15px 10px 15px;
+}
+
+.conr_tabdiv_top .conr_tabdiv_img {
+    float: left;
+    position: relative;
+    height: 94px;
+}
+
+.conr_tabdiv_top .conr_tabdiv_img img {
+    width: 148px;
+    height: 92px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    float: left;
+}
+
+/*.conr_tabdiv_top .conr_tabdiv_img i {*/
+/*width: 22px;*/
+/*height: 94px;*/
+/*display: inline-block;*/
+/*float: left;*/
+/*}*/
+.icon-img {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    display: block;
+}
+
+.i-xt {
+    background: #f23a01;
+}
+
+.i-xs {
+    background: #ffc03b;
+}
+
+.conr_tabdiv_top .conr_tabdiv_rt {
+    float: left;
+    padding-left: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #222;
+    width: 270px;
+}
+
+.conr_tabdiv_top .conr_tabdiv_rt p {
+    text-align: left;
+    padding-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.conr_tabdiv_top .conr_tabdiv_rt p a {
+    /*color: #222;*/
+}
+
+.conr_tabdiv_top .conr_tabdiv_rt p a:hover {
+    color: #357fcc;
+}
+
+.conr_tabdiv_top .conr_tabdiv_rt p label {
+    color: #fe6905;
+}
+
+.conr_tabdiv_top .conr_tabdiv_rt_b {
+    clear: both
+}
+
+.conr_tabdiv_top .conr_tabdiv_rt_b p {
+    line-height: 20px;
+    float: left;
+    padding-right: 15px;
+}
+
+.conr_tabdiv_bot {
+    padding: 10px 15px;
+}
+
+.conr_tabdiv_bot p {
+    color: #222;
+    text-align: left;
+    word-break: break-all;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.conr_tabdiv_bot p del {
+    color: red;
+}
+.conr_tabdiv_bot p label {
+    color: #888;
+}
+
+.conr_tabdiv_bot ul li {
+    display: block;
+    float: left;
+    color: #666;
+}
+
+.conr_tabdiv_bot ul li img {
+    position: relative;
+    top: 8px;
+    right: 6px;
+}
+
+.table-center td {
+    text-align: center
+}
+
+.error {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.error h4 {
+    padding: 15px 0;
+    font-size: 26px;
+}
+
+.error p {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.error p span {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+    height: 20px;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #56a54e;
+}
+
+.error1 h4 {
+    color: #56a54e;
+}
+
+.error2 h4 {
+    color: #ee7b1d;
+
+}

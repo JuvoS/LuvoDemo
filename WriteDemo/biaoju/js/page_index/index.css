@@ -1,0 +1,289 @@
+/*#body,*/
+/*#body1 {*/
+/*-webkit-transition: all .5s linear;*/
+/*-moz-transition: all .5s linear;*/
+/*-o-transition: all .5s linear;*/
+/*transition: all .5s linear;*/
+/*!*opacity: 0;*!*/
+/*}*/
+
+/*.f-dhid {*/
+/*display: none !important;*/
+/*}*/
+
+.index-search1 {
+    padding-right: 122px;
+}
+
+.index-content {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    right: 0;
+    bottom: 92px;
+}
+
+.index-table {
+    padding-top: 25%;
+}
+
+/*
+    æ¨¡æ‹Ÿplaceholder
+*/
+.index-search {
+    position: relative;
+    z-index: 1;
+}
+
+.index-search .placeholder {
+    position: absolute;
+    z-index: 1;
+    color: #a9a9a9;
+    font-size: 14px;
+    text-indent: 1em;
+}
+
+.index-search input {
+    position: relative;
+    z-index: 2;
+    background: url(../../img/inputbg.png);
+}
+
+.activeAnimate {
+    opacity: 1 !important;
+}
+
+.logoAnimate {
+
+}
+
+.breathe-btn {
+    transition: All .2s linear;
+    -webkit-transition: All .2s linear;
+    -moz-transition: All .2s linear;
+    -o-transition: All .2s linear;
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* header */
+.header * {
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.header-index {
+    border-bottom: 1px solid #ececec;
+    height: 45px !important;
+}
+
+.header-index .logo {
+    display: none;
+}
+
+.header-index a {
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.header-index .nav {
+    height: 44px !important;
+    line-height: 44px !important;
+}
+
+.header-index .nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.header-index .nav ul li a {
+    display: inline-block
+}
+
+.header-index .nav ul li.active a {
+    border-bottom: 2px solid #fc7d28
+}
+
+.header-index .nav ul li a:hover {
+    color: #fc7d28;
+}
+
+.header-index .header-right a {
+    font-size: 14px;
+}
+
+.logininfo {
+    padding-top: 26px;
+    position: relative
+}
+
+.login-messs span {
+    color: #222;
+    font-size: 14px;
+    float: left;
+    line-height: 19px;
+}
+
+.login-messs a {
+    padding-right: 5px;
+    padding-left: 5px;
+    float: left;
+    line-height: 19px;
+}
+
+.icon-message {
+    background: url("../../img/icon/icon25.png") no-repeat center bottom;
+    width: 20px;
+    height: 15px;
+    display: block;
+    padding-top: 1px;
+}
+
+.header .header-right a.login-name {
+    text-align: right;
+    display: block;
+    padding-bottom: 5px;
+    color: #666
+}
+
+.header .header-right a.login-name em {
+    white-space: nowrap;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    max-width: 156px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+}
+
+.logininfo .userlist {
+    width: 95px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    display: none;
+}
+
+.logininfo .userlist li {
+    height: 32px;
+    line-height: 32px;
+}
+
+.logininfo .userlist li a {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    padding-left: 25px;
+}
+
+.logininfo .userlist li a:hover {
+    color: #fc6c00
+}
+
+.logininfo .userlist li a i {
+    color: #fc6c00;
+    font-style: normal;
+}
+
+.login-denglu:hover {
+    color: #fc6c00
+}
+
+.logininfo .userlist li a.icon8 {
+    background: url("../../img/icon/icon8.png") no-repeat;
+}
+
+.logininfo .userlist li a.icon8:hover {
+    background: url("../../img/icon/icon8-active.png") no-repeat;
+}
+
+.logininfo .userlist li a.icon9 {
+    background: url("../../img/icon/icon9.png") no-repeat;
+}
+
+.logininfo .userlist li a.icon9:hover {
+    background: url("../../img/icon/icon9-active.png") no-repeat;
+}
+
+.logininfo .userlist li a.icon10 {
+    background: url("../../img/icon/icon10.png") no-repeat;
+}
+
+.logininfo .userlist li a.icon10:hover {
+    background: url("../../img/icon/icon10-active.png") no-repeat;
+}
+
+.icon-new {
+    background: url("/Static/img1.7/new.gif") no-repeat;
+    height: 15px;
+    width: 25px;
+    position: absolute;
+    top: 13px;
+    right: -23px;
+}
+
+.u-loadding {
+    background: url("/Static/style/slice/loading.gif") no-repeat center center;
+}
+
+.nav ul li.active a {
+    display: inline-block;
+}
+
+.icon-manage {
+    background: url("../../img/icon/icon18.png") no-repeat;
+    width: 69px;
+    height: 17px;
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    margin-left: -30px;
+    display: none;
+    border-radius: 8px;
+    background: #fff;
+    line-height: 1.5;
+    color: #333;
+    z-index: 9999;
+    min-width: 40px;
+    word-break: break-all;
+}
+
+.tooltip .tag {
+    border: 1px solid #fc6c00;
+    position: relative;
+    padding: 8px 8px;
+    background-color: #FFF;
+}
+
+.tooltip .arrow {
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fc6c00;
+}
+
+.tooltip .arrow em {
+    position: absolute;
+    top: 1px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+}

@@ -1,0 +1,171 @@
+/*header-index*/
+.header-index {
+    border-bottom: 1px solid #ececec;
+    height: 45px;
+}
+
+.header-index a {
+    font-size: 14px;
+}
+
+.nav {
+    height: 44px;
+    line-height: 44px;
+}
+
+.nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    display: inline-block;
+    position: relative;
+}
+.icon-manage {
+    background: url('../../img/icon/icon18.png') no-repeat;
+    width: 69px;
+    height: 17px;
+    display: inline-block;
+}
+.nav ul li.active a {
+    border-bottom: 2px solid #fc7d28
+}
+
+.nav ul li a:hover {
+    color: #fc7d28;
+}
+
+/*header*/
+.header {
+    border-bottom: 1px solid #ececec;
+    height: 68px;
+    width: 100%;
+    background: #fff;
+}
+
+.header img {
+    padding-right: 100px;
+    margin-top: 5px;
+    max-height: 61px;
+}
+
+.header a {
+    font-size: 16px;
+    color: #222;
+}
+
+.header .nav {
+    height: 66px;
+    line-height: 66px;
+}
+
+.header .nav ul li {
+    margin-right: 32px;
+}
+
+.icon-new {
+    background: url("/Static/img1.7/new.gif") no-repeat;
+    height: 15px;
+    width: 25px;
+    position: absolute;
+    top: 16px;
+    right: -23px;
+    padding-right: 0;
+}
+
+.logininfo {
+    padding-top: 26px;
+    position: relative
+}
+
+.logininfo a {
+    font-size: 14px;
+}
+
+.login-messs span {
+    color: #222;
+    font-size: 14px;
+    float: left;
+    line-height: 19px;
+}
+
+.login-messs a {
+    padding-right: 5px;
+    padding-left: 5px;
+    float: left;
+    line-height: 19px;
+}
+
+.icon-message {
+    background: url("../../img/icon/icon25.png") no-repeat center bottom;
+    width: 20px;
+    height: 15px;
+    display: block;
+    padding-top: 1px;
+}
+.header .header-right a.login-name, .header .header-right a.login-denglu {
+    text-align: right;
+    display: block;
+    padding-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+.logininfo .userlist {
+    width: 95px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    display: none;
+}
+
+.logininfo .userlist li {
+    height: 32px;
+    line-height: 32px;
+}
+
+.logininfo .userlist li a {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    padding-left: 25px;
+}
+
+.logininfo .userlist li a:hover {
+    color: #fc6c00
+}
+
+.logininfo .userlist li a i {
+    color: #fc6c00;
+    font-style: normal;
+}
+
+.login-denglu:hover {
+    color: #fc6c00
+}
+
+.logininfo .userlist li a.icon8 {
+    background: url("../../img/icon/icon8.png") no-repeat;
+}
+.logininfo .userlist li a.icon8:hover {
+    background: url("../../img/icon/icon8-active.png") no-repeat;
+}
+
+.logininfo .userlist li a.icon9 {
+    background: url("../../img/icon/icon9.png") no-repeat;
+}
+.logininfo .userlist li a.icon9:hover {
+    background: url("../../img/icon/icon9-active.png") no-repeat;
+}
+.logininfo .userlist li a.icon10 {
+    background: url("../../img/icon/icon10.png") no-repeat;
+}
+.logininfo .userlist li a.icon10:hover {
+     background: url("../../img/icon/icon10-active.png") no-repeat;
+ }

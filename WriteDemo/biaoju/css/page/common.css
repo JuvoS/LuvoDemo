@@ -1,0 +1,294 @@
+/* css reset*/
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    font: 12px "å¾®è½¯é›…é»‘";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, i {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input, textarea, button {
+    outline: none
+}
+
+input, textarea, keygen, select, button {
+    font: 12px "å¾®è½¯é›…é»‘";
+}
+
+/*::-webkit-input-placeholder { !* WebKit browsers *!*/
+/*color: #999;*/
+/*}*/
+
+/*:-moz-placeholder { !* Mozilla Firefox 4 to 18 *!*/
+/*color: #999;*/
+/*}*/
+
+/*::-moz-placeholder { !* Mozilla Firefox 19+ *!*/
+/*color: #999;*/
+/*}*/
+
+/*:-ms-input-placeholder { !* Internet Explorer 10+ *!*/
+/*color: #999;*/
+/*}*/
+/* css common */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right;
+}
+
+.t-left {
+    text-align: left
+}
+
+.t-right {
+    text-align: right
+}
+
+.t-center {
+    text-align: center;
+}
+
+.wrap {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+    padding-right: 7px;
+    vertical-align: top;
+}
+
+.hide {
+    display: none
+}
+
+.radiobox {
+    background: url(../../img/login/icon15.png) no-repeat;
+    background-size: 15px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.radiobox.active {
+    background: url(../../img/login/icon15-active.png) no-repeat;
+    background-size: 15px;
+}
+
+.btn-code {
+    width: 95px;
+    height: 40px;
+    border: 1px solid #2daeee;
+    color: #2daeee;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-code:hover {
+    background: #2daeee;
+    color: #fff;
+}
+
+.btn-code.active {
+    background: #d9d9d9;
+    color: #333;
+    border: 1px solid #d9d9d9;
+}
+
+.a-style {
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    background: #fc6c00;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.p10 {
+    padding-top: 10px;
+}
+
+.clear {
+    clear: both
+}
+
+.classlist {
+    padding: 20px 10px;
+    border-bottom: 1px solid #ddd;
+    width: 618px;
+}
+
+.classlist ul li {
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    float: left;
+    cursor: pointer;
+    margin: 5px 2px;
+}
+
+.classlist ul li.active {
+    border: 1px solid #fd6c01;
+}
+
+.border {
+    border: 1px solid #ddd
+}
+
+.classlist-a {
+    padding: 5px 10px;
+    margin-right: 12px;
+    color: #2daeee
+}
+
+
+
+/*pages*/
+.pages {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pages label {
+    display: inline-block;
+    width: 79px;
+    height: 31px;
+    background: #fff;
+    text-align: center;
+    line-height: 31px;
+    font-size: 12px;
+    color: #666;
+    border: solid 1px #eee;
+}
+.mj-hco:hover {
+    cursor: pointer;
+    color: #fc883a;
+    border: solid 1px #fc883a;
+}
+.pages label.on {
+    background: #dcdbd9;
+    color: #fff;
+}
+
+.pages label.on a {
+    color: #fff;
+}
+
+.pages label a {
+    color: #666;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.pages > a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 31px;
+    background: #fff;
+    text-align: center;
+    line-height: 31px;
+    font-size: 12px;
+    color: #666;
+    border: solid 1px #eee;
+}
+
+.pages > a.on, .pages > a:hover {
+    color: #fc883a;
+    border: solid 1px #fc883a;
+}
+
+.pages span {
+    padding: 0 5px 0 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.pages select {
+    height: 31px;
+    color: #666;
+    border: solid 1px #eee;
+    cursor: pointer;
+    outline: none;
+    padding /***/: 6px 0 \9;
+}
+
+.pages input {
+    margin-top: -2px;
+    width: 35px;
+    height: 31px;
+    outline: none;
+    border: solid 1px #ddd;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -4px \9;
+    line-height: 31px \9;
+}
+
+.pages label.mj-qbtn {
+    width: 40px;
+    background: #fff;
+    cursor: pointer;
+}
+.nav ul li.active a{
+    display: inline-block;
+}
+.icon-manage{
+    background: url("../../img/icon/icon18.png") no-repeat;
+    width: 69px;
+    height: 17px; display: inline-block;
+}

@@ -1,0 +1,158 @@
+.header {
+    height: 68px;
+    line-height: 68px;
+    border-bottom: 1px solid #d6dce0;;
+
+}
+
+.header .wrap {
+    min-width: 960px;
+    margin: 0 auto;
+}
+html,body {
+	min-width: 1200px;	
+}
+
+.logo {
+    padding-top: 4px;
+}
+
+.login-main-bg {
+    background: url(../../img/login/login-main.png) no-repeat top center;
+    /*height: 450px;*/
+    width: 100%
+}
+
+.login-main {
+    /*height: 450px;*/
+    padding-bottom: 50px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.login-box {
+    width: 270px;
+    /*height: 260px;*/
+    margin-top: 50px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 8px #ccc;
+    border-radius: 5px;
+    padding: 40px;
+    position: relative;
+}
+
+.tips {
+    position: absolute;
+    top: 40px;
+    height: 45px;
+    background: url(../../img/login/icon2.png) 10px center no-repeat #fdebdd;
+    line-height: 45px;
+    padding-left: 40px;
+    color: #ed6600;
+    width: 232px;
+    display: none;
+}
+
+.login-title {
+    height: 45px;
+}
+
+.login-title h3 {
+    font-size: 18px;
+}
+
+.login-title a {
+    color: #fc6c00;
+}
+
+.login-input {
+    background: #fff;
+    border: 1px solid #bbb;
+    height: 38px;
+    width: 230px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.login-input input {
+    width: 230px;
+    text-indent: 1em;
+    height: 38px;
+    border: none;
+    border-radius: 2px;
+}
+
+.login-input b {
+    width: 38px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #bbb;
+}
+
+.name b {
+    background: url(../../img/index/icon3.png) no-repeat center center #f9f9f9;
+}
+
+.name i {
+    background: url(../../img/login/icon1.png) no-repeat;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.pwd b {
+    background: url(../../img/login/icon5.png)) no-repeat center center #f9f9f9;
+}
+
+.code {
+    width: 120px;
+}
+
+.code b {
+    background: url("../../img/icon/icon4.png") no-repeat center center #f9f9f9;
+}
+
+.code input {
+    width: 115px;
+}
+
+.form .btn-submit {
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    background: #fd6c01;
+    width: 272px;
+    height: 35px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.loginbox-footer a {
+    color: #1aa4e9;
+}
+
+.btn-code {
+    cursor: pointer;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+
+
+
+
+

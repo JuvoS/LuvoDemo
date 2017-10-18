@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/page/common.css" />
+		<link rel="stylesheet" href="../css/page/footer.css" />
+		<link rel="stylesheet" href="../css/page/login.register.css" />
+	</head>
+
+	<body>
+
+		<div id="body" class="activeAnimate">
+			<div class="header">
+				<div class="wrap clearfix">
+					<div class="fl logo">
+						<a href="/"><img src="../img/index/header-logo.png"></a>
+					</div>
+					<div class="fr">代理交流群：245945931 &nbsp;&nbsp; | &nbsp;&nbsp; 商标申请人交流群：643903499</div>
+				</div>
+			</div>
+			<div class="register">
+				<div class="register-title clearfix">
+					<h3 class="fl">注册</h3>
+					<p class="fr">已有账号，
+						<a href="/login/index">去登录</a>
+					</p>
+				</div>
+				<div class="register-form">
+					<table width="100%">
+						<tbody>
+							<tr>
+								<td class="td1">选择身份：</td>
+								<td>
+									<div data-id="daili" class="radiobox-box"><i class="radiobox active" data-id="1"></i> 商标代理人</div>
+									<div data-id="shenqing" class="radiobox-box"><i class="radiobox" data-id="2"></i> 商标申请人</div>
+								</td>
+							</tr>
+							<tr class="daili">
+								<td class="td1">我所在的代理机构：</td>
+								<td> <input type="text" name="name" class="txt-style1" placeholder="若为独立代理人，请在姓名后备注，如：张三（个人）" maxlength="50"> <span class="verify-tips f-dn">代理机构不能为空</span> </td>
+							</tr>
+							<tr class="shenqing" style="display: none;">
+								<td class="td1"></td>
+								<td>
+									<a href="javascript:;" class="btn-choise" onclick="CHOFN.addSort(this);">添加我所在的行业类别</a>
+									<div class="class-check" style="display: none">
+										<p class="class-check-val fl"></p>
+										<a href="javascript:;" class="checkmore-class fl" onclick="CHOFN.seeMore(this);">查看更多</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="td1">手机号码：</td>
+								<td> <input type="text" class="txt-style1" name="phone"> <span class="verify-tips f-dn">手机号不正确</span> </td>
+							</tr>
+							<tr>
+								<td class="td1">输入验证码：</td>
+								<td class="clearfix"> <input type="text" class="txt-style1 fl" name="code" style="width: 200px;"> <span class="btn-code fl" onclick="CHOFN.acquireCode(this);">获取验证码</span> <span class="verify-tips f-dn fl">验证码不正确</span> </td>
+							</tr>
+							<tr>
+								<td class="td1">请设置密码：</td>
+								<td> <input type="password" class="txt-style1" name="password"> <span class="verify-tips f-dn">必须且只含有数字和字母，6-20位</span>
+									<a href="javascript:;" class="pwd-show active" title="显示密码"></a>
+								</td>
+							</tr>
+							<tr>
+								<td class="td1"></td>
+								<td> <button class="btn-submit" onclick="CHOFN.submit(this);">确 认</button> </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="footer">
+				<!---->
+				<ul class="clearfix">
+					<li>
+						<a href="/introduce/survey/" target="_blank">产品介绍</a>
+					</li>
+					<li>
+						<a href="/introduce/manage1/" target="_blank">商标管理介绍</a>
+					</li>
+					<li>
+						<a href="/introduce/history/" target="_blank">成长事记</a>
+					</li> <span class="fr" style="color: #999;">©2017 飙局</span> </ul>
+			</div>
+			<div class="fix-right">
+				<a href="javascript:void(0);" class="feedback mj-fees" id="jFanKui"><i class="icon20"></i>反馈</a>
+				<a href="javascript:void(0);" class="backtop"><i class="icon19"></i>顶部</a>
+			</div>
+			<div style="display: none">
+				<div class="mj-guanjia"> <span class="ms-close mj-close"></span>
+					<p>请先完善CRM系统里的邮箱</p>
+					<a class="tcbox-qr" href="" target="_blank">去完善</a>
+					<a class="tcbox-qx">取消</a>
+				</div>
+			</div>
+			<div id="mj-feedback-box" style="display: none">
+				<div class="mj-feedback" style="display: block;height: auto;">
+					<div class="mj-feeCon">
+						<p>您好，我们团队每天都会整理分析你给的建议，无论是好的坏的。飙局的进步，离不开你的支持。 如果你有一分钟时间，请立刻告诉我们团队你的想法吧。 </p> <textarea name="feedback" onfocus="if(this.value=='意见反馈（500个汉字内）' || this.value=='请填写您的意见'){this.value=''}; $('#em4email').html('');" onblur="if(this.value==''){this.value='意见反馈（500个汉字内）'}">意见反馈（500个汉字内）</textarea> <input name="email" type="text" value="您的Email地址" onfocus="if(this.value=='您的Email地址'){this.value='';$('#em4email').html('')}" onblur="if(this.value==''){this.value='您的Email地址'}"> <em id="em4email"></em>
+						<a id="submit" href="javascript:void(0);" class="jFanKuiSubmit">提交反馈</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

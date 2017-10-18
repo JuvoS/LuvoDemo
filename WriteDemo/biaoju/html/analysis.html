@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/page/header.css" />
+		<link rel="stylesheet" href="../css/page/footer.css" />
+		<link rel="stylesheet" href="../css/analysis/import-comm.css" />
+		<link rel="stylesheet" href="../css/analysis/analysis.css" />
+		<link rel="stylesheet" href="../css/analysis/city-picker.css" />
+		<link rel="stylesheet" href="../js/page_index/ui-dialog.css" />
+		<link rel="stylesheet" href="../js/page_index/index.css" />
+		<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/layer/layer.js"></script>
+		<link rel="stylesheet" href="../js/layer/skin/layer.css" />
+
+	</head>
+
+	<body>
+
+		<div id="body" class="activeAnimate">
+			<div class="header ">
+				<div class="clearfix" style="width: 1184px;margin: 0 auto;">
+					<a href="/" class="logo"><img src="/Static/img1.7/header-logo.png" class="fl"></a>
+					<div class="nav fl">
+						<ul>
+							<li class="">
+								<a href="/">商标查询</a>
+							</li>
+							<li class="active">
+								<a href="/analysis/index/">商标分析</a>
+							</li>
+							<li class="">
+								<a href="/monitor/prompt/">商标监测</a>
+							</li>
+							<li class="">
+								<a href="/notice/index/">商标公告</a>
+							</li>
+							<li class="">
+								<a href="/manage/archives/" id="guanjialogin">商标管理</a> <i class="icon-manage"></i></li>
+							<li>
+								<a href="http://www.yizhchan.com/" target="_blank">商标交易</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header-right fr">
+						<!---->
+						<div class="logininfo fl">
+							<a href="/login/index" class="login-denglu fl">登录</a>
+							<a href="/login/register/" class="login-denglu fl" style="padding-left: 10px;">注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ietips"> 尊敬的用户,商标分析于即日起开始不再保障IE8浏览器下的可用性。建议您尽快升级浏览器，或者使用Chrome、Firefox。 </div>
+			<div class="m-container" style="min-height: 635px;">
+				<div class="tab_title clearfix mt20"> <span class="tab_li current "><a href="javascript:void(0);">概览</a></span> <span class="tab_li"><a href="/analysis/search/">个案</a></span> </div>
+				<div class="mt20 clearfix"> <span class="fl" style="color: #999"> 概览是对商标的申请人排名、地域分布、时间趋势、类别注册量排名的统计分析。 </span>
+					<a href="/notice/index/" target="_blank" style="color:#999;"> <span class="fr">数据更新至公告第<i>1568</i>期（2017-09-20）</span> </a>
+				</div>
+				<div class="item" id="item3">
+					<div class="trade-rank mb20">
+						<div class="territory-top clearfix mb10">
+							<h3 class="fl">申请人排名</h3>
+							<div class="fr territory-input">
+								<div class="fl"> <label style="float: left;padding-top: 6px;">地区：</label> <input id="city-picker2" readonly="" class="txt-input city-picker-input" type="text" value="全国" data-toggle="city-picker"><span class="city-picker-span"><span class="placeholder">全国</span><span class="title" style="display: none;"></span>
+									<div class="arrow"></div>
+									</span>
+									<div class="city-picker-dropdown" style="left: 0px; top: 100%; width: 320px; display: none;">
+										<div class="city-select-wrap">
+											<div class="city-select-tab">
+												<a class="active" data-count="province">省份</a>
+												<a data-count="city">城市</a>
+												<a data-count="district">区县</a>
+												<a href="javascript:;" class="city-close">确定</a>
+											</div>
+											<div class="city-select-content">
+												<div class="city-select province" data-count="province" style="display: block;">
+													<dl class="clearfix"><dt>A-G</dt>
+														<dd>
+															<a title="安徽省" data-code="310000" class="">安徽省</a>
+															<a title="澳门" data-code="420000" class="">澳门</a>
+															<a title="北京市" data-code="110000" class="">北京市</a>
+															<a title="重庆市" data-code="140000" class="">重庆市</a>
+															<a title="福建省" data-code="160000" class="">福建省</a>
+															<a title="甘肃省" data-code="380000" class="">甘肃省</a>
+															<a title="广东省" data-code="150000" class="">广东省</a>
+															<a title="广西壮族自治区" data-code="330000" class="">广西壮族自治区</a>
+															<a title="贵州省" data-code="360000" class="">贵州省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>H-K</dt>
+														<dd>
+															<a title="海南省" data-code="340000" class="">海南省</a>
+															<a title="河北省" data-code="260000" class="">河北省</a>
+															<a title="黑龙江省" data-code="300000" class="">黑龙江省</a>
+															<a title="河南省" data-code="250000" class="">河南省</a>
+															<a title="湖北省" data-code="240000" class="">湖北省</a>
+															<a title="湖南省" data-code="320000" class="">湖南省</a>
+															<a title="江苏省" data-code="180000" class="">江苏省</a>
+															<a title="江西省" data-code="210000" class="">江西省</a>
+															<a title="吉林省" data-code="290000" class="">吉林省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>L-S</dt>
+														<dd>
+															<a title="辽宁省" data-code="200000" class="">辽宁省</a>
+															<a title="内蒙古自治区" data-code="280000" class="">内蒙古自治区</a>
+															<a title="宁夏回族自治区" data-code="390000" class="">宁夏回族自治区</a>
+															<a title="青海省" data-code="400000" class="">青海省</a>
+															<a title="山东省" data-code="190000" class="">山东省</a>
+															<a title="上海市" data-code="120000" class="">上海市</a>
+															<a title="山西省" data-code="270000" class="">山西省</a>
+															<a title="陕西省" data-code="230000" class="">陕西省</a>
+															<a title="四川省" data-code="220000" class="">四川省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>T-Z</dt>
+														<dd>
+															<a title="浙江省" data-code="170000" class="">浙江省</a>
+															<a title="天津市" data-code="130000" class="">天津市</a>
+															<a title="新疆维吾尔自治区" data-code="410000" class="">新疆维吾尔自治区</a>
+															<a title="西藏自治区" data-code="370000" class="">西藏自治区</a>
+															<a title="云南省" data-code="350000" class="">云南省</a>
+															<a title="香港" data-code="440000" class="">香港</a>
+															<a title="台湾" data-code="430000" class="">台湾</a>
+														</dd>
+													</dl>
+												</div>
+												<div class="city-select city" data-count="city" style="display: none;">
+													<dl class="clearfix">
+														<dd></dd>
+													</dl>
+												</div>
+												<div class="city-select district" data-count="district" style="display: none;">
+													<dl class="clearfix">
+														<dd></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl select-proposer"> <span class="select-input-title fl">类别：</span>
+									<div class="select-input fl jShowAllLi" click="1" id="pro_class">3,4,8,9,13,14,18,19,20,24,25,29,30,34</div>
+									<div class="select-list" style="display: none;">
+										<div class="select-class jDiyu">
+											<ul class="clearfix">
+												<li data-key="1">
+													<a href="javascript:void(0);"> 01 化工原料 </a>
+												</li>
+												<li data-key="2">
+													<a href="javascript:void(0);"> 02 油漆涂料 </a>
+												</li>
+												<li data-key="3" class="active temporary">
+													<a href="javascript:void(0);"> 03 化妆清洁 </a>
+												</li>
+												<li data-key="4" class="active temporary">
+													<a href="javascript:void(0);"> 04 工业油脂 </a>
+												</li>
+												<li data-key="5">
+													<a href="javascript:void(0);"> 05 药品制剂 </a>
+												</li>
+												<li data-key="6">
+													<a href="javascript:void(0);"> 06 五金器具 </a>
+												</li>
+												<li data-key="7">
+													<a href="javascript:void(0);"> 07 机械机器 </a>
+												</li>
+												<li data-key="8" class="active temporary">
+													<a href="javascript:void(0);"> 08 手工用具 </a>
+												</li>
+												<li data-key="9" class="active temporary">
+													<a href="javascript:void(0);"> 09 电子电器 </a>
+												</li>
+												<li data-key="10">
+													<a href="javascript:void(0);"> 10 医疗器械 </a>
+												</li>
+												<li data-key="11">
+													<a href="javascript:void(0);"> 11 家用电器 </a>
+												</li>
+												<li data-key="12">
+													<a href="javascript:void(0);"> 12 车船配件 </a>
+												</li>
+												<li data-key="13" class="active temporary">
+													<a href="javascript:void(0);"> 13 火器烟花 </a>
+												</li>
+												<li data-key="14" class="active temporary">
+													<a href="javascript:void(0);"> 14 珠宝饰品 </a>
+												</li>
+												<li data-key="15">
+													<a href="javascript:void(0);"> 15 乐器乐辅 </a>
+												</li>
+												<li data-key="16">
+													<a href="javascript:void(0);"> 16 文具办公 </a>
+												</li>
+												<li data-key="17">
+													<a href="javascript:void(0);"> 17 橡塑制品 </a>
+												</li>
+												<li data-key="18" class="active temporary">
+													<a href="javascript:void(0);"> 18 皮具制品 </a>
+												</li>
+												<li data-key="19" class="active temporary">
+													<a href="javascript:void(0);"> 19 建筑材料 </a>
+												</li>
+												<li data-key="20" class="active temporary">
+													<a href="javascript:void(0);"> 20 家具工艺 </a>
+												</li>
+												<li data-key="21">
+													<a href="javascript:void(0);"> 21 厨具日用 </a>
+												</li>
+												<li data-key="22">
+													<a href="javascript:void(0);"> 22 缆绳帐篷 </a>
+												</li>
+												<li data-key="23">
+													<a href="javascript:void(0);"> 23 线纱丝纺 </a>
+												</li>
+												<li data-key="24" class="active temporary">
+													<a href="javascript:void(0);"> 24 家用纺品 </a>
+												</li>
+												<li data-key="25" class="active temporary">
+													<a href="javascript:void(0);"> 25 服装鞋帽 </a>
+												</li>
+												<li data-key="26">
+													<a href="javascript:void(0);"> 26 缝纫用品 </a>
+												</li>
+												<li data-key="27">
+													<a href="javascript:void(0);"> 27 地毯席垫 </a>
+												</li>
+												<li data-key="28">
+													<a href="javascript:void(0);"> 28 运动器械 </a>
+												</li>
+												<li data-key="29" class="active temporary">
+													<a href="javascript:void(0);"> 29 食品鱼肉 </a>
+												</li>
+												<li data-key="30" class="active temporary">
+													<a href="javascript:void(0);"> 30 食品佐料 </a>
+												</li>
+												<li data-key="31">
+													<a href="javascript:void(0);"> 31 生鲜农产 </a>
+												</li>
+												<li data-key="32">
+													<a href="javascript:void(0);"> 32 啤酒饮料 </a>
+												</li>
+												<li data-key="33">
+													<a href="javascript:void(0);"> 33 酒精饮料 </a>
+												</li>
+												<li data-key="34" class="active temporary">
+													<a href="javascript:void(0);"> 34 烟草制品 </a>
+												</li>
+												<li data-key="35">
+													<a href="javascript:void(0);"> 35 广告商业 </a>
+												</li>
+												<li data-key="36">
+													<a href="javascript:void(0);"> 36 金融经纪 </a>
+												</li>
+												<li data-key="37">
+													<a href="javascript:void(0);"> 37 修理安装 </a>
+												</li>
+												<li data-key="38">
+													<a href="javascript:void(0);"> 38 通讯服务 </a>
+												</li>
+												<li data-key="39">
+													<a href="javascript:void(0);"> 39 运输旅行 </a>
+												</li>
+												<li data-key="40">
+													<a href="javascript:void(0);"> 40 加工服务 </a>
+												</li>
+												<li data-key="41">
+													<a href="javascript:void(0);"> 41 教育娱乐 </a>
+												</li>
+												<li data-key="42">
+													<a href="javascript:void(0);"> 42 科技研究 </a>
+												</li>
+												<li data-key="43">
+													<a href="javascript:void(0);"> 43 餐饮住宿 </a>
+												</li>
+												<li data-key="44">
+													<a href="javascript:void(0);"> 44 医疗美容 </a>
+												</li>
+												<li data-key="45">
+													<a href="javascript:void(0);"> 45 法律安全 </a>
+												</li>
+											</ul>
+											<div class="btn-choise">
+												<a href="javascript:void(0);" class="btn-choise-yes" data-type="pro">确定</a>
+												<a href="javascript:void(0);" class="btn-choise-no">取消</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl datebox"> <label>年份：</label>
+									<div class="txt-date jYearDate"> <span click="1" id="pro_start">2007</span>
+										<ul type="Pro" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div> <label> 至 </label>
+									<div class="txt-date jYearDate"> <span click="1" id="pro_end">2017</span>
+										<ul type="Pro" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<td width="30">排名</td>
+									<td width="260">申请人名称</td>
+									<td width="260">地址</td>
+									<td width="190" class="td-center">筛选条件下的商标数量（件）</td>
+									<td class="td-center">商标总量（件）</td>
+									<td class="td-center">占比</td>
+								</tr>
+							</thead>
+							<tbody id="pro_list" style="">
+								<tr>
+									<td class="td-mark">1</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=1042426&amp;proposerName=%E4%BE%AF%E4%B8%B0%E7%BE%BD" class="txt-overflow">侯丰羽</a>
+									</td>
+									<td><span class="txt-overflow">广东省广州市白云区广州大道北怡新路168号怡新花园怡泰阁E3栋2201房</span></td>
+									<td class="td-center">4762</td>
+									<td class="td-center">4820</td>
+									<td class="td-center">99%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">2</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=2472452&amp;proposerName=%E8%85%BE%E8%AE%AF%E7%A7%91%E6%8A%80%EF%BC%88%E6%B7%B1%E5%9C%B3%EF%BC%89%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">腾讯科技（深圳）有限公司</a>
+									</td>
+									<td><span class="txt-overflow">广东省深圳市福田区赛格科技园2栋东403号</span></td>
+									<td class="td-center">3613</td>
+									<td class="td-center">11652</td>
+									<td class="td-center">31%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">3</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=8665976&amp;proposerName=%E5%B9%BF%E5%B7%9E%E5%85%B1%E9%A9%B0%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">广州共驰信息科技有限公司</a>
+									</td>
+									<td><span class="txt-overflow">广东省广州市天河区科韵路62号1112房</span></td>
+									<td class="td-center">3374</td>
+									<td class="td-center">6824</td>
+									<td class="td-center">49%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">4</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=2156610&amp;proposerName=%E5%B9%BF%E5%B7%9E%E5%B8%82%E7%8E%AE%E8%AA%89%E8%B4%B8%E6%98%93%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">广州市玮誉贸易有限公司</a>
+									</td>
+									<td><span class="txt-overflow">广东省广州市天河区先烈东路296号8517-8519室</span></td>
+									<td class="td-center">3098</td>
+									<td class="td-center">3106</td>
+									<td class="td-center">100%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">5</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=6783699&amp;proposerName=%E5%B9%BF%E5%B7%9E%E5%9B%9B%E4%B8%89%E4%B9%9D%E4%B9%9D%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">广州四三九九信息科技有限公司</a>
+									</td>
+									<td><span class="txt-overflow">广东省广州市天河区建中路8号四楼B2房</span></td>
+									<td class="td-center">2769</td>
+									<td class="td-center">6365</td>
+									<td class="td-center">44%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">6</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=481556&amp;proposerName=%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E9%9B%86%E5%9B%A2%E6%8E%A7%E8%82%A1%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">阿里巴巴集团控股有限公司</a>
+									</td>
+									<td><span class="txt-overflow">开曼群岛大开曼岛资本大厦一座四层847号邮箱</span></td>
+									<td class="td-center">2663</td>
+									<td class="td-center">14687</td>
+									<td class="td-center">18%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">7</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=8666177&amp;proposerName=%E5%B9%BF%E5%B7%9E%E5%B8%82%E6%9C%97%E5%BE%8B%E4%BF%A1%E6%81%AF%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">广州市朗律信息科技有限公司</a>
+									</td>
+									<td><span class="txt-overflow">广东省广州市天河区中山大道西238号2602室</span></td>
+									<td class="td-center">2321</td>
+									<td class="td-center">4811</td>
+									<td class="td-center">48%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">8</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=1259775&amp;proposerName=%E4%B8%8A%E6%B5%B7%E5%BD%AA%E9%A9%AC%E6%9C%8D%E9%A5%B0%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">上海彪马服饰有限公司</a>
+									</td>
+									<td><span class="txt-overflow">上海市金山区亭林镇车亭公路3398弄8号708室</span></td>
+									<td class="td-center">1770</td>
+									<td class="td-center">2684</td>
+									<td class="td-center">66%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">9</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=9404513&amp;proposerName=%E6%A2%81%E7%BF%A0%E6%B8%85" class="txt-overflow">梁翠清</a>
+									</td>
+									<td><span class="txt-overflow">广东省广州市越秀区中山一路51号之二名品居204房</span></td>
+									<td class="td-center">1770</td>
+									<td class="td-center">1791</td>
+									<td class="td-center">99%</td>
+								</tr>
+								<tr>
+									<td class="td-mark">10</td>
+									<td>
+										<a target="_blank" href="/analysis/details/?proposerId=8666358&amp;proposerName=%E5%B9%BF%E5%B7%9E%E7%B1%B3%E6%A0%87%E4%BC%81%E4%B8%9A%E7%AE%A1%E7%90%86%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="txt-overflow">广州米标企业管理有限公司</a>
+									</td>
+									<td><span class="txt-overflow">广东省广州市天河区黄村南便街上二巷4号B336房</span></td>
+									<td class="td-center">1586</td>
+									<td class="td-center">3956</td>
+									<td class="td-center">40%</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="loading" id="pro_loading" style="display: none;"><img src="/Static/style/slice/loading.gif" alt=""></div>
+						<div class="loading" id="pro_no_data" style="display:none;">
+							<p style="padding-top:150px">类别选择太多啦，请精简噢</p>
+						</div>
+						<div class="pages" id="pro_pages"><label class="mj-hco"><a href="javascript:void(0);">上一页</a></label>
+							<a href="javascript:void(0);" class="on jAnalyPage" data-page="1">1</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="2">2</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="3">3</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="4">4</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="5">5</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="6">6</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="7">7</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="8">8</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="9">9</a>
+							<a href="javascript:void(0);" class="jAnalyPage" data-page="10">10</a><label class="mj-hco"><a href="javascript:void(0);" class="jAnalyPage" data-page="2">下一页</a></label><span>共10页 到第</span>
+							<select name="nump" id="nump" class="jAnalyPageChange">
+								<option value="1" selected="selected">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="item" id="item1">
+					<div class="territory clearfix">
+						<div class="territory-top clearfix">
+							<h3 class="fl">地域分布</h3>
+							<div class="fr territory-input">
+								<div class="fl select-proposer"> <span class="select-input-title fl">类别：</span>
+									<div class="select-input fl jShowAllLi" id="loc_class">全类</div>
+									<div class="select-list" style="display: none;">
+										<div class="select-class jDiyu">
+											<ul class="clearfix">
+												<li data-key="1">
+													<a href="javascript:void(0);"> 01 化工原料 </a>
+												</li>
+												<li data-key="2">
+													<a href="javascript:void(0);"> 02 油漆涂料 </a>
+												</li>
+												<li data-key="3">
+													<a href="javascript:void(0);"> 03 化妆清洁 </a>
+												</li>
+												<li data-key="4">
+													<a href="javascript:void(0);"> 04 工业油脂 </a>
+												</li>
+												<li data-key="5">
+													<a href="javascript:void(0);"> 05 药品制剂 </a>
+												</li>
+												<li data-key="6">
+													<a href="javascript:void(0);"> 06 五金器具 </a>
+												</li>
+												<li data-key="7">
+													<a href="javascript:void(0);"> 07 机械机器 </a>
+												</li>
+												<li data-key="8">
+													<a href="javascript:void(0);"> 08 手工用具 </a>
+												</li>
+												<li data-key="9">
+													<a href="javascript:void(0);"> 09 电子电器 </a>
+												</li>
+												<li data-key="10">
+													<a href="javascript:void(0);"> 10 医疗器械 </a>
+												</li>
+												<li data-key="11">
+													<a href="javascript:void(0);"> 11 家用电器 </a>
+												</li>
+												<li data-key="12">
+													<a href="javascript:void(0);"> 12 车船配件 </a>
+												</li>
+												<li data-key="13">
+													<a href="javascript:void(0);"> 13 火器烟花 </a>
+												</li>
+												<li data-key="14">
+													<a href="javascript:void(0);"> 14 珠宝饰品 </a>
+												</li>
+												<li data-key="15">
+													<a href="javascript:void(0);"> 15 乐器乐辅 </a>
+												</li>
+												<li data-key="16">
+													<a href="javascript:void(0);"> 16 文具办公 </a>
+												</li>
+												<li data-key="17">
+													<a href="javascript:void(0);"> 17 橡塑制品 </a>
+												</li>
+												<li data-key="18">
+													<a href="javascript:void(0);"> 18 皮具制品 </a>
+												</li>
+												<li data-key="19">
+													<a href="javascript:void(0);"> 19 建筑材料 </a>
+												</li>
+												<li data-key="20">
+													<a href="javascript:void(0);"> 20 家具工艺 </a>
+												</li>
+												<li data-key="21">
+													<a href="javascript:void(0);"> 21 厨具日用 </a>
+												</li>
+												<li data-key="22">
+													<a href="javascript:void(0);"> 22 缆绳帐篷 </a>
+												</li>
+												<li data-key="23">
+													<a href="javascript:void(0);"> 23 线纱丝纺 </a>
+												</li>
+												<li data-key="24">
+													<a href="javascript:void(0);"> 24 家用纺品 </a>
+												</li>
+												<li data-key="25">
+													<a href="javascript:void(0);"> 25 服装鞋帽 </a>
+												</li>
+												<li data-key="26">
+													<a href="javascript:void(0);"> 26 缝纫用品 </a>
+												</li>
+												<li data-key="27">
+													<a href="javascript:void(0);"> 27 地毯席垫 </a>
+												</li>
+												<li data-key="28">
+													<a href="javascript:void(0);"> 28 运动器械 </a>
+												</li>
+												<li data-key="29">
+													<a href="javascript:void(0);"> 29 食品鱼肉 </a>
+												</li>
+												<li data-key="30">
+													<a href="javascript:void(0);"> 30 食品佐料 </a>
+												</li>
+												<li data-key="31">
+													<a href="javascript:void(0);"> 31 生鲜农产 </a>
+												</li>
+												<li data-key="32">
+													<a href="javascript:void(0);"> 32 啤酒饮料 </a>
+												</li>
+												<li data-key="33">
+													<a href="javascript:void(0);"> 33 酒精饮料 </a>
+												</li>
+												<li data-key="34">
+													<a href="javascript:void(0);"> 34 烟草制品 </a>
+												</li>
+												<li data-key="35">
+													<a href="javascript:void(0);"> 35 广告商业 </a>
+												</li>
+												<li data-key="36">
+													<a href="javascript:void(0);"> 36 金融经纪 </a>
+												</li>
+												<li data-key="37">
+													<a href="javascript:void(0);"> 37 修理安装 </a>
+												</li>
+												<li data-key="38">
+													<a href="javascript:void(0);"> 38 通讯服务 </a>
+												</li>
+												<li data-key="39">
+													<a href="javascript:void(0);"> 39 运输旅行 </a>
+												</li>
+												<li data-key="40">
+													<a href="javascript:void(0);"> 40 加工服务 </a>
+												</li>
+												<li data-key="41">
+													<a href="javascript:void(0);"> 41 教育娱乐 </a>
+												</li>
+												<li data-key="42">
+													<a href="javascript:void(0);"> 42 科技研究 </a>
+												</li>
+												<li data-key="43">
+													<a href="javascript:void(0);"> 43 餐饮住宿 </a>
+												</li>
+												<li data-key="44">
+													<a href="javascript:void(0);"> 44 医疗美容 </a>
+												</li>
+												<li data-key="45">
+													<a href="javascript:void(0);"> 45 法律安全 </a>
+												</li>
+											</ul>
+											<div class="btn-choise">
+												<a href="javascript:void(0);" class="btn-choise-yes" data-type="loc">确定</a>
+												<a href="javascript:void(0);" class="btn-choise-no">取消</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl datebox"> <label>年份：</label>
+									<div class="txt-date jYearDate"> <span click="1" id="loc_start">2007</span>
+										<ul type="Loc" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div> <label> 至 </label>
+									<div class="txt-date jYearDate"> <span click="1" id="loc_end">2017</span>
+										<ul type="Loc" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="map fl">
+							<div class="map-img" style="height: 600px; width: 750px">
+								<div id="mapchina" style="height: 600px; -webkit-tap-highlight-color: transparent; user-select: none; background-color: rgba(0, 0, 0, 0);" _echarts_instance_="1508308903920">
+									<div style="position: relative; overflow: hidden; width: 750px; height: 600px;">
+										<div data-zr-dom-id="bg" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 600px; user-select: none;"></div><canvas width="750" height="600" data-zr-dom-id="0" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 600px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="750" height="600" data-zr-dom-id="1" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 600px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="750" height="600" data-zr-dom-id="_zrender_hover_" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 600px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas></div>
+								</div>
+							</div>
+							<div class="map-num">
+								<p class="t-center">全国申请量为<span id="loc_total">16670918件</span></p>
+							</div>
+						</div>
+						<div class="map-rank table-rank">
+							<table>
+								<caption>省份申请量Top10</caption>
+								<thead>
+									<tr>
+										<td width="50">排名</td>
+										<td>省份</td>
+										<td width="120">申请量（件）</td>
+									</tr>
+								</thead>
+								<tbody id="loc_top10">
+									<tr>
+										<td><b>1</b></td>
+										<td>广东</td>
+										<td>3146696</td>
+									</tr>
+									<tr>
+										<td><b>2</b></td>
+										<td>浙江</td>
+										<td>1751624</td>
+									</tr>
+									<tr>
+										<td><b>3</b></td>
+										<td>北京</td>
+										<td>1567201</td>
+									</tr>
+									<tr>
+										<td><b>4</b></td>
+										<td>上海</td>
+										<td>1148092</td>
+									</tr>
+									<tr>
+										<td><b>5</b></td>
+										<td>江苏</td>
+										<td>1052265</td>
+									</tr>
+									<tr>
+										<td><b>6</b></td>
+										<td>山东</td>
+										<td>883290</td>
+									</tr>
+									<tr>
+										<td><b>7</b></td>
+										<td>福建</td>
+										<td>879725</td>
+									</tr>
+									<tr>
+										<td><b>8</b></td>
+										<td>四川</td>
+										<td>592207</td>
+									</tr>
+									<tr>
+										<td><b>9</b></td>
+										<td>河南</td>
+										<td>578509</td>
+									</tr>
+									<tr>
+										<td><b>10</b></td>
+										<td>河北</td>
+										<td>444096</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="loading" id="loc_loading" style="display:none;"><img src="/Static/style/slice/loading.gif" alt=""></div>
+						</div>
+					</div>
+				</div>
+				<div class="item" id="item2">
+					<div class="time timedate">
+						<div class="territory-top clearfix">
+							<h3 class="fl">时间趋势</h3>
+							<div class="fr territory-input">
+								<div class="fl"> <label style="float: left;padding-top: 6px;">地区：</label> <input id="city-picker3" readonly="" class="txt-input city-picker-input" type="text" value="" data-toggle="city-picker"><span class="city-picker-span"><span class="placeholder">全国</span><span class="title" style="display: none;"></span>
+									<div class="arrow"></div>
+									</span>
+									<div class="city-picker-dropdown" style="left: 0px; top: 100%; width: 320px; display: none;">
+										<div class="city-select-wrap">
+											<div class="city-select-tab">
+												<a class="active" data-count="province">省份</a>
+												<a data-count="city">城市</a>
+												<a data-count="district">区县</a>
+												<a href="javascript:;" class="city-close">确定</a>
+											</div>
+											<div class="city-select-content">
+												<div class="city-select province" data-count="province" style="display: block;">
+													<dl class="clearfix"><dt>A-G</dt>
+														<dd>
+															<a title="安徽省" data-code="310000" class="">安徽省</a>
+															<a title="澳门" data-code="420000" class="">澳门</a>
+															<a title="北京市" data-code="110000" class="">北京市</a>
+															<a title="重庆市" data-code="140000" class="">重庆市</a>
+															<a title="福建省" data-code="160000" class="">福建省</a>
+															<a title="甘肃省" data-code="380000" class="">甘肃省</a>
+															<a title="广东省" data-code="150000" class="">广东省</a>
+															<a title="广西壮族自治区" data-code="330000" class="">广西壮族自治区</a>
+															<a title="贵州省" data-code="360000" class="">贵州省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>H-K</dt>
+														<dd>
+															<a title="海南省" data-code="340000" class="">海南省</a>
+															<a title="河北省" data-code="260000" class="">河北省</a>
+															<a title="黑龙江省" data-code="300000" class="">黑龙江省</a>
+															<a title="河南省" data-code="250000" class="">河南省</a>
+															<a title="湖北省" data-code="240000" class="">湖北省</a>
+															<a title="湖南省" data-code="320000" class="">湖南省</a>
+															<a title="江苏省" data-code="180000" class="">江苏省</a>
+															<a title="江西省" data-code="210000" class="">江西省</a>
+															<a title="吉林省" data-code="290000" class="">吉林省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>L-S</dt>
+														<dd>
+															<a title="辽宁省" data-code="200000" class="">辽宁省</a>
+															<a title="内蒙古自治区" data-code="280000" class="">内蒙古自治区</a>
+															<a title="宁夏回族自治区" data-code="390000" class="">宁夏回族自治区</a>
+															<a title="青海省" data-code="400000" class="">青海省</a>
+															<a title="山东省" data-code="190000" class="">山东省</a>
+															<a title="上海市" data-code="120000" class="">上海市</a>
+															<a title="山西省" data-code="270000" class="">山西省</a>
+															<a title="陕西省" data-code="230000" class="">陕西省</a>
+															<a title="四川省" data-code="220000" class="">四川省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>T-Z</dt>
+														<dd>
+															<a title="浙江省" data-code="170000" class="">浙江省</a>
+															<a title="天津市" data-code="130000" class="">天津市</a>
+															<a title="新疆维吾尔自治区" data-code="410000" class="">新疆维吾尔自治区</a>
+															<a title="西藏自治区" data-code="370000" class="">西藏自治区</a>
+															<a title="云南省" data-code="350000" class="">云南省</a>
+															<a title="香港" data-code="440000" class="">香港</a>
+															<a title="台湾" data-code="430000" class="">台湾</a>
+														</dd>
+													</dl>
+												</div>
+												<div class="city-select city" data-count="city" style="display: none;">
+													<dl class="clearfix">
+														<dd></dd>
+													</dl>
+												</div>
+												<div class="city-select district" data-count="district" style="display: none;">
+													<dl class="clearfix">
+														<dd></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl select-proposer"> <span class="select-input-title fl">类别：</span>
+									<div class="select-input fl jShowAllLi" id="year_class">全类</div>
+									<div class="select-list" style="display: none;">
+										<div class="select-class jDiyu">
+											<ul class="clearfix">
+												<li data-key="1">
+													<a href="javascript:void(0);"> 01 化工原料 </a>
+												</li>
+												<li data-key="2">
+													<a href="javascript:void(0);"> 02 油漆涂料 </a>
+												</li>
+												<li data-key="3">
+													<a href="javascript:void(0);"> 03 化妆清洁 </a>
+												</li>
+												<li data-key="4">
+													<a href="javascript:void(0);"> 04 工业油脂 </a>
+												</li>
+												<li data-key="5">
+													<a href="javascript:void(0);"> 05 药品制剂 </a>
+												</li>
+												<li data-key="6">
+													<a href="javascript:void(0);"> 06 五金器具 </a>
+												</li>
+												<li data-key="7">
+													<a href="javascript:void(0);"> 07 机械机器 </a>
+												</li>
+												<li data-key="8">
+													<a href="javascript:void(0);"> 08 手工用具 </a>
+												</li>
+												<li data-key="9">
+													<a href="javascript:void(0);"> 09 电子电器 </a>
+												</li>
+												<li data-key="10">
+													<a href="javascript:void(0);"> 10 医疗器械 </a>
+												</li>
+												<li data-key="11">
+													<a href="javascript:void(0);"> 11 家用电器 </a>
+												</li>
+												<li data-key="12">
+													<a href="javascript:void(0);"> 12 车船配件 </a>
+												</li>
+												<li data-key="13">
+													<a href="javascript:void(0);"> 13 火器烟花 </a>
+												</li>
+												<li data-key="14">
+													<a href="javascript:void(0);"> 14 珠宝饰品 </a>
+												</li>
+												<li data-key="15">
+													<a href="javascript:void(0);"> 15 乐器乐辅 </a>
+												</li>
+												<li data-key="16">
+													<a href="javascript:void(0);"> 16 文具办公 </a>
+												</li>
+												<li data-key="17">
+													<a href="javascript:void(0);"> 17 橡塑制品 </a>
+												</li>
+												<li data-key="18">
+													<a href="javascript:void(0);"> 18 皮具制品 </a>
+												</li>
+												<li data-key="19">
+													<a href="javascript:void(0);"> 19 建筑材料 </a>
+												</li>
+												<li data-key="20">
+													<a href="javascript:void(0);"> 20 家具工艺 </a>
+												</li>
+												<li data-key="21">
+													<a href="javascript:void(0);"> 21 厨具日用 </a>
+												</li>
+												<li data-key="22">
+													<a href="javascript:void(0);"> 22 缆绳帐篷 </a>
+												</li>
+												<li data-key="23">
+													<a href="javascript:void(0);"> 23 线纱丝纺 </a>
+												</li>
+												<li data-key="24">
+													<a href="javascript:void(0);"> 24 家用纺品 </a>
+												</li>
+												<li data-key="25">
+													<a href="javascript:void(0);"> 25 服装鞋帽 </a>
+												</li>
+												<li data-key="26">
+													<a href="javascript:void(0);"> 26 缝纫用品 </a>
+												</li>
+												<li data-key="27">
+													<a href="javascript:void(0);"> 27 地毯席垫 </a>
+												</li>
+												<li data-key="28">
+													<a href="javascript:void(0);"> 28 运动器械 </a>
+												</li>
+												<li data-key="29">
+													<a href="javascript:void(0);"> 29 食品鱼肉 </a>
+												</li>
+												<li data-key="30">
+													<a href="javascript:void(0);"> 30 食品佐料 </a>
+												</li>
+												<li data-key="31">
+													<a href="javascript:void(0);"> 31 生鲜农产 </a>
+												</li>
+												<li data-key="32">
+													<a href="javascript:void(0);"> 32 啤酒饮料 </a>
+												</li>
+												<li data-key="33">
+													<a href="javascript:void(0);"> 33 酒精饮料 </a>
+												</li>
+												<li data-key="34">
+													<a href="javascript:void(0);"> 34 烟草制品 </a>
+												</li>
+												<li data-key="35">
+													<a href="javascript:void(0);"> 35 广告商业 </a>
+												</li>
+												<li data-key="36">
+													<a href="javascript:void(0);"> 36 金融经纪 </a>
+												</li>
+												<li data-key="37">
+													<a href="javascript:void(0);"> 37 修理安装 </a>
+												</li>
+												<li data-key="38">
+													<a href="javascript:void(0);"> 38 通讯服务 </a>
+												</li>
+												<li data-key="39">
+													<a href="javascript:void(0);"> 39 运输旅行 </a>
+												</li>
+												<li data-key="40">
+													<a href="javascript:void(0);"> 40 加工服务 </a>
+												</li>
+												<li data-key="41">
+													<a href="javascript:void(0);"> 41 教育娱乐 </a>
+												</li>
+												<li data-key="42">
+													<a href="javascript:void(0);"> 42 科技研究 </a>
+												</li>
+												<li data-key="43">
+													<a href="javascript:void(0);"> 43 餐饮住宿 </a>
+												</li>
+												<li data-key="44">
+													<a href="javascript:void(0);"> 44 医疗美容 </a>
+												</li>
+												<li data-key="45">
+													<a href="javascript:void(0);"> 45 法律安全 </a>
+												</li>
+											</ul>
+											<div class="btn-choise">
+												<a href="javascript:void(0);" class="btn-choise-yes" data-type="Year">确定</a>
+												<a href="javascript:void(0);" class="btn-choise-no">取消</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl datebox"> <label>年份：</label>
+									<div class="txt-date jYearDate"> <span click="1" id="year_start">2007</span>
+										<ul type="Year" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div> <label> 至 </label>
+									<div class="txt-date jYearDate"> <span click="1" id="year_end">2017</span>
+										<ul type="Year" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="time-img" style="height: 300px; width: 100%">
+							<div id="timebox" style="height: 300px; width: 100%; -webkit-tap-highlight-color: transparent; user-select: none; background-color: rgba(0, 0, 0, 0);" _echarts_instance_="1508308903921">
+								<div style="position: relative; overflow: hidden; width: 1138px; height: 300px;">
+									<div data-zr-dom-id="bg" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 1138px; height: 300px; user-select: none;"></div><canvas width="1138" height="300" data-zr-dom-id="0" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 1138px; height: 300px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="1138" height="300" data-zr-dom-id="1" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 1138px; height: 300px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas><canvas width="1138" height="300" data-zr-dom-id="_zrender_hover_" class="zr-element" style="position: absolute; left: 0px; top: 0px; width: 1138px; height: 300px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas></div>
+							</div>
+						</div>
+						<div class="mt10">
+							<p class="text-center" id="year_text">2007-2017年 商标申请趋势表</p>
+						</div>
+					</div>
+				</div>
+				<div class="item" id="item4">
+					<div class="trade-rank mb20 clearfix">
+						<div class="territory-top clearfix mb10">
+							<h3 class="fl">类别申请量排名</h3>
+							<div class="fr territory-input">
+								<div class="fl"> <label style="float: left;padding-top: 6px;">地区：</label> <input id="city-picker1" readonly="" class="txt-input city-picker-input" type="text" value="" data-toggle="city-picker"><span class="city-picker-span"><span class="placeholder">全国</span><span class="title" style="display: none;"></span>
+									<div class="arrow"></div>
+									</span>
+									<div class="city-picker-dropdown" style="left: 0px; top: 100%; width: 320px; display: none;">
+										<div class="city-select-wrap">
+											<div class="city-select-tab">
+												<a class="active" data-count="province">省份</a>
+												<a data-count="city">城市</a>
+												<a data-count="district">区县</a>
+												<a href="javascript:;" class="city-close">确定</a>
+											</div>
+											<div class="city-select-content">
+												<div class="city-select province" data-count="province" style="display: block;">
+													<dl class="clearfix"><dt>A-G</dt>
+														<dd>
+															<a title="安徽省" data-code="310000" class="">安徽省</a>
+															<a title="澳门" data-code="420000" class="">澳门</a>
+															<a title="北京市" data-code="110000" class="">北京市</a>
+															<a title="重庆市" data-code="140000" class="">重庆市</a>
+															<a title="福建省" data-code="160000" class="">福建省</a>
+															<a title="甘肃省" data-code="380000" class="">甘肃省</a>
+															<a title="广东省" data-code="150000" class="">广东省</a>
+															<a title="广西壮族自治区" data-code="330000" class="">广西壮族自治区</a>
+															<a title="贵州省" data-code="360000" class="">贵州省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>H-K</dt>
+														<dd>
+															<a title="海南省" data-code="340000" class="">海南省</a>
+															<a title="河北省" data-code="260000" class="">河北省</a>
+															<a title="黑龙江省" data-code="300000" class="">黑龙江省</a>
+															<a title="河南省" data-code="250000" class="">河南省</a>
+															<a title="湖北省" data-code="240000" class="">湖北省</a>
+															<a title="湖南省" data-code="320000" class="">湖南省</a>
+															<a title="江苏省" data-code="180000" class="">江苏省</a>
+															<a title="江西省" data-code="210000" class="">江西省</a>
+															<a title="吉林省" data-code="290000" class="">吉林省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>L-S</dt>
+														<dd>
+															<a title="辽宁省" data-code="200000" class="">辽宁省</a>
+															<a title="内蒙古自治区" data-code="280000" class="">内蒙古自治区</a>
+															<a title="宁夏回族自治区" data-code="390000" class="">宁夏回族自治区</a>
+															<a title="青海省" data-code="400000" class="">青海省</a>
+															<a title="山东省" data-code="190000" class="">山东省</a>
+															<a title="上海市" data-code="120000" class="">上海市</a>
+															<a title="山西省" data-code="270000" class="">山西省</a>
+															<a title="陕西省" data-code="230000" class="">陕西省</a>
+															<a title="四川省" data-code="220000" class="">四川省</a>
+														</dd>
+													</dl>
+													<dl class="clearfix"><dt>T-Z</dt>
+														<dd>
+															<a title="浙江省" data-code="170000" class="">浙江省</a>
+															<a title="天津市" data-code="130000" class="">天津市</a>
+															<a title="新疆维吾尔自治区" data-code="410000" class="">新疆维吾尔自治区</a>
+															<a title="西藏自治区" data-code="370000" class="">西藏自治区</a>
+															<a title="云南省" data-code="350000" class="">云南省</a>
+															<a title="香港" data-code="440000" class="">香港</a>
+															<a title="台湾" data-code="430000" class="">台湾</a>
+														</dd>
+													</dl>
+												</div>
+												<div class="city-select city" data-count="city" style="display: none;">
+													<dl class="clearfix">
+														<dd></dd>
+													</dl>
+												</div>
+												<div class="city-select district" data-count="district" style="display: none;">
+													<dl class="clearfix">
+														<dd></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="fl datebox"> <label>年份：</label>
+									<div class="txt-date jYearDate"> <span click="1" id="class_start">2007</span>
+										<ul type="Class" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div> <label> 至 </label>
+									<div class="txt-date jYearDate"> <span click="1" id="class_end">2017</span>
+										<ul type="Class" style="display: none;">
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+											<li>1993</li>
+											<li>1992</li>
+											<li>1991</li>
+											<li>1990</li>
+											<li>1989</li>
+											<li>1988</li>
+											<li>1987</li>
+											<li>1986</li>
+											<li>1985</li>
+											<li>1984</li>
+											<li>1983</li>
+											<li>1982</li>
+											<li>1981</li>
+											<li>1980</li>
+											<li>1979</li>
+											<li>1978</li>
+											<li>1977</li>
+											<li>1976</li>
+											<li>1975</li>
+											<li>1974</li>
+											<li>1973</li>
+											<li>1972</li>
+											<li>1971</li>
+											<li>1970</li>
+											<li>1969</li>
+											<li>1968</li>
+											<li>1967</li>
+											<li>1966</li>
+											<li>1965</li>
+											<li>1964</li>
+											<li>1963</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="twotable fl">
+							<table class="table">
+								<thead>
+									<tr>
+										<td>排名</td>
+										<td>类别</td>
+										<td>商标数量（件）</td>
+									</tr>
+								</thead>
+								<tbody id="class_list_10" style="">
+									<tr data-id="25">
+										<td>1</td>
+										<td>
+											<a href="/help/classDetail/?classId=25" class="td-mark">第25类</a>
+										</td>
+										<td>1672645</td>
+									</tr>
+									<tr data-id="35">
+										<td>2</td>
+										<td>
+											<a href="/help/classDetail/?classId=35" class="td-mark">第35类</a>
+										</td>
+										<td>1568712</td>
+									</tr>
+									<tr data-id="9">
+										<td>3</td>
+										<td>
+											<a href="/help/classDetail/?classId=9" class="td-mark">第9类</a>
+										</td>
+										<td>1143834</td>
+									</tr>
+									<tr data-id="30">
+										<td>4</td>
+										<td>
+											<a href="/help/classDetail/?classId=30" class="td-mark">第30类</a>
+										</td>
+										<td>1050974</td>
+									</tr>
+									<tr data-id="29">
+										<td>5</td>
+										<td>
+											<a href="/help/classDetail/?classId=29" class="td-mark">第29类</a>
+										</td>
+										<td>760914</td>
+									</tr>
+									<tr data-id="43">
+										<td>6</td>
+										<td>
+											<a href="/help/classDetail/?classId=43" class="td-mark">第43类</a>
+										</td>
+										<td>712210</td>
+									</tr>
+									<tr data-id="11">
+										<td>7</td>
+										<td>
+											<a href="/help/classDetail/?classId=11" class="td-mark">第11类</a>
+										</td>
+										<td>634688</td>
+									</tr>
+									<tr data-id="41">
+										<td>8</td>
+										<td>
+											<a href="/help/classDetail/?classId=41" class="td-mark">第41类</a>
+										</td>
+										<td>612431</td>
+									</tr>
+									<tr data-id="5">
+										<td>9</td>
+										<td>
+											<a href="/help/classDetail/?classId=5" class="td-mark">第5类</a>
+										</td>
+										<td>611445</td>
+									</tr>
+									<tr data-id="42">
+										<td>10</td>
+										<td>
+											<a href="/help/classDetail/?classId=42" class="td-mark">第42类</a>
+										</td>
+										<td>608606</td>
+									</tr>
+									<tr data-id="3">
+										<td>11</td>
+										<td>
+											<a href="/help/classDetail/?classId=3" class="td-mark">第3类</a>
+										</td>
+										<td>599566</td>
+									</tr>
+									<tr data-id="31">
+										<td>12</td>
+										<td>
+											<a href="/help/classDetail/?classId=31" class="td-mark">第31类</a>
+										</td>
+										<td>484254</td>
+									</tr>
+									<tr data-id="33">
+										<td>13</td>
+										<td>
+											<a href="/help/classDetail/?classId=33" class="td-mark">第33类</a>
+										</td>
+										<td>482254</td>
+									</tr>
+									<tr data-id="7">
+										<td>14</td>
+										<td>
+											<a href="/help/classDetail/?classId=7" class="td-mark">第7类</a>
+										</td>
+										<td>475421</td>
+									</tr>
+									<tr data-id="20">
+										<td>15</td>
+										<td>
+											<a href="/help/classDetail/?classId=20" class="td-mark">第20类</a>
+										</td>
+										<td>431596</td>
+									</tr>
+									<tr data-id="32">
+										<td>16</td>
+										<td>
+											<a href="/help/classDetail/?classId=32" class="td-mark">第32类</a>
+										</td>
+										<td>370500</td>
+									</tr>
+									<tr data-id="18">
+										<td>17</td>
+										<td>
+											<a href="/help/classDetail/?classId=18" class="td-mark">第18类</a>
+										</td>
+										<td>361240</td>
+									</tr>
+									<tr data-id="16">
+										<td>18</td>
+										<td>
+											<a href="/help/classDetail/?classId=16" class="td-mark">第16类</a>
+										</td>
+										<td>360532</td>
+									</tr>
+									<tr data-id="21">
+										<td>19</td>
+										<td>
+											<a href="/help/classDetail/?classId=21" class="td-mark">第21类</a>
+										</td>
+										<td>335054</td>
+									</tr>
+									<tr data-id="36">
+										<td>20</td>
+										<td>
+											<a href="/help/classDetail/?classId=36" class="td-mark">第36类</a>
+										</td>
+										<td>331955</td>
+									</tr>
+									<tr data-id="12">
+										<td>21</td>
+										<td>
+											<a href="/help/classDetail/?classId=12" class="td-mark">第12类</a>
+										</td>
+										<td>324746</td>
+									</tr>
+									<tr data-id="6">
+										<td>22</td>
+										<td>
+											<a href="/help/classDetail/?classId=6" class="td-mark">第6类</a>
+										</td>
+										<td>318837</td>
+									</tr>
+									<tr data-id="14">
+										<td>23</td>
+										<td>
+											<a href="/help/classDetail/?classId=14" class="td-mark">第14类</a>
+										</td>
+										<td>305608</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="loading" id="class_loading1" style="display: none;"><img src="/Static/style/slice/loading.gif" alt=""></div>
+						</div>
+						<div class="twotable fr">
+							<table class="table">
+								<thead>
+									<tr>
+										<td>排名</td>
+										<td>类别</td>
+										<td>商标数量（件）</td>
+									</tr>
+								</thead>
+								<tbody id="class_list_20" style="">
+									<tr data-id="19">
+										<td>24</td>
+										<td>
+											<a href="/help/classDetail/?classId=19" class="td-mark">第19类</a>
+										</td>
+										<td>305553</td>
+									</tr>
+									<tr data-id="28">
+										<td>25</td>
+										<td>
+											<a href="/help/classDetail/?classId=28" class="td-mark">第28类</a>
+										</td>
+										<td>282558</td>
+									</tr>
+									<tr data-id="1">
+										<td>26</td>
+										<td>
+											<a href="/help/classDetail/?classId=1" class="td-mark">第1类</a>
+										</td>
+										<td>280071</td>
+									</tr>
+									<tr data-id="44">
+										<td>27</td>
+										<td>
+											<a href="/help/classDetail/?classId=44" class="td-mark">第44类</a>
+										</td>
+										<td>272210</td>
+									</tr>
+									<tr data-id="37">
+										<td>28</td>
+										<td>
+											<a href="/help/classDetail/?classId=37" class="td-mark">第37类</a>
+										</td>
+										<td>252677</td>
+									</tr>
+									<tr data-id="24">
+										<td>29</td>
+										<td>
+											<a href="/help/classDetail/?classId=24" class="td-mark">第24类</a>
+										</td>
+										<td>251412</td>
+									</tr>
+									<tr data-id="39">
+										<td>30</td>
+										<td>
+											<a href="/help/classDetail/?classId=39" class="td-mark">第39类</a>
+										</td>
+										<td>236343</td>
+									</tr>
+									<tr data-id="38">
+										<td>31</td>
+										<td>
+											<a href="/help/classDetail/?classId=38" class="td-mark">第38类</a>
+										</td>
+										<td>227394</td>
+									</tr>
+									<tr data-id="10">
+										<td>32</td>
+										<td>
+											<a href="/help/classDetail/?classId=10" class="td-mark">第10类</a>
+										</td>
+										<td>223421</td>
+									</tr>
+									<tr data-id="40">
+										<td>33</td>
+										<td>
+											<a href="/help/classDetail/?classId=40" class="td-mark">第40类</a>
+										</td>
+										<td>141649</td>
+									</tr>
+									<tr data-id="45">
+										<td>34</td>
+										<td>
+											<a href="/help/classDetail/?classId=45" class="td-mark">第45类</a>
+										</td>
+										<td>138031</td>
+									</tr>
+									<tr data-id="17">
+										<td>35</td>
+										<td>
+											<a href="/help/classDetail/?classId=17" class="td-mark">第17类</a>
+										</td>
+										<td>135245</td>
+									</tr>
+									<tr data-id="2">
+										<td>36</td>
+										<td>
+											<a href="/help/classDetail/?classId=2" class="td-mark">第2类</a>
+										</td>
+										<td>132037</td>
+									</tr>
+									<tr data-id="8">
+										<td>37</td>
+										<td>
+											<a href="/help/classDetail/?classId=8" class="td-mark">第8类</a>
+										</td>
+										<td>121147</td>
+									</tr>
+									<tr data-id="4">
+										<td>38</td>
+										<td>
+											<a href="/help/classDetail/?classId=4" class="td-mark">第4类</a>
+										</td>
+										<td>107713</td>
+									</tr>
+									<tr data-id="27">
+										<td>39</td>
+										<td>
+											<a href="/help/classDetail/?classId=27" class="td-mark">第27类</a>
+										</td>
+										<td>90690</td>
+									</tr>
+									<tr data-id="26">
+										<td>40</td>
+										<td>
+											<a href="/help/classDetail/?classId=26" class="td-mark">第26类</a>
+										</td>
+										<td>88952</td>
+									</tr>
+									<tr data-id="22">
+										<td>41</td>
+										<td>
+											<a href="/help/classDetail/?classId=22" class="td-mark">第22类</a>
+										</td>
+										<td>62032</td>
+									</tr>
+									<tr data-id="34">
+										<td>42</td>
+										<td>
+											<a href="/help/classDetail/?classId=34" class="td-mark">第34类</a>
+										</td>
+										<td>58073</td>
+									</tr>
+									<tr data-id="15">
+										<td>43</td>
+										<td>
+											<a href="/help/classDetail/?classId=15" class="td-mark">第15类</a>
+										</td>
+										<td>52381</td>
+									</tr>
+									<tr data-id="23">
+										<td>44</td>
+										<td>
+											<a href="/help/classDetail/?classId=23" class="td-mark">第23类</a>
+										</td>
+										<td>46342</td>
+									</tr>
+									<tr data-id="13">
+										<td>45</td>
+										<td>
+											<a href="/help/classDetail/?classId=13" class="td-mark">第13类</a>
+										</td>
+										<td>29400</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="loading" id="class_loading2" style="display: none;"><img src="/Static/style/slice/loading.gif" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<!---->
+				<ul class="clearfix">
+					<li>
+						<a href="/introduce/survey/" target="_blank">产品介绍</a>
+					</li>
+					<li>
+						<a href="/introduce/manage1/" target="_blank">商标管理介绍</a>
+					</li>
+					<li>
+						<a href="/introduce/history/" target="_blank">成长事记</a>
+					</li> <span class="fr" style="color: #999;">©2017 飙局</span> </ul>
+			</div>
+			<div class="fix-right">
+				<a href="javascript:void(0);" class="feedback mj-fees" id="jFanKui"><i class="icon20"></i>反馈</a>
+				<a href="javascript:void(0);" class="backtop" style="display: none;"><i class="icon19"></i>顶部</a>
+			</div>
+			<div style="display: none">
+				<div class="mj-guanjia"> <span class="ms-close mj-close"></span>
+					<p>请先完善CRM系统里的邮箱</p>
+					<a class="tcbox-qr" href="http://crm.chaofan.wang/" target="_blank">去完善</a>
+					<a class="tcbox-qx">取消</a>
+				</div>
+			</div>
+			<div id="mj-feedback-box" style="display: none">
+				<div class="mj-feedback" style="display: block;height: auto;">
+					<div class="mj-feeCon">
+						<p>您好，我们团队每天都会整理分析你给的建议，无论是好的坏的。飙局的进步，离不开你的支持。 如果你有一分钟时间，请立刻告诉我们团队你的想法吧。 </p> <textarea name="feedback" onfocus="if(this.value=='意见反馈（500个汉字内）' || this.value=='请填写您的意见'){this.value=''}; $('#em4email').html('');" onblur="if(this.value==''){this.value='意见反馈（500个汉字内）'}">意见反馈（500个汉字内）</textarea> <input name="email" type="text" value="您的Email地址" onfocus="if(this.value=='您的Email地址'){this.value='';$('#em4email').html('')}" onblur="if(this.value==''){this.value='您的Email地址'}"> <em id="em4email"></em>
+						<a id="submit" href="javascript:void(0);" class="jFanKuiSubmit">提交反馈</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="nav-menu" style="display: none;">
+			<ul class="clearfix">
+				<li>
+					<a href="javascript:void(0);" name="#item3" class="active"><span>申请人</span></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" name="#item1"><span>地域</span></a><i></i></li>
+				<li>
+					<a href="javascript:void(0);" name="#item2"><span>时间</span></a><i></i></li>
+				<li>
+					<a href="javascript:void(0);" name="#item4"><span>类别</span></a>
+				</li>
+			</ul>
+		</div>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,117 @@
+#body, .index {
+    height: 100%;
+}
+
+.index {
+    background: url("../../img/introduce/indexbg.png") no-repeat center center;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 10px;
+    width: 98%;
+    color: #666;
+    padding: 0 1%;
+    z-index: 999;
+}
+
+.bottom a {
+    color: #3565ff
+}
+
+.htmleaf-container {
+display: none
+}
+
+.slide-image {
+    height: 100%;
+    width: 100%
+}
+
+.banner1 {
+    background: url("../../img/introduce/banner1.jpg") no-repeat center center;
+}
+
+.banner2 {
+    background: url("../../img/introduce/banner2.jpg") no-repeat center center;
+}
+
+.banner3 {
+    background: url("../../img/introduce/banner3.jpg") no-repeat center center;
+}
+
+.banner4 {
+    background: url("../../img/introduce/banner4.jpg") no-repeat center center;
+}
+
+.banner5 {
+    background: url("../../img/introduce/banner5.jpg") no-repeat center center;
+}
+
+.slider-icon1 {
+    background: url("../../img/introduce/slider1.png") no-repeat center top;
+}
+
+.slider-icon2 {
+    background: url("../../img/introduce/slider2.png") no-repeat center top;
+}
+
+.slider-icon3 {
+    background: url("../../img/introduce/slider3.png") no-repeat center top;
+}
+
+.slider-icon4 {
+    background: url("../../img/introduce/slider4.png") no-repeat center top;
+}
+
+.slider-icon5 {
+    background: url("../../img/introduce/slider5.png") no-repeat center top;
+}
+
+.slider-icon1.active {
+    background: url("../../img/introduce/slider1-active.png") no-repeat center top;
+}
+
+.slider-icon2.active {
+    background: url("../../img/introduce/slider2-active.png") no-repeat center top;
+}
+
+.slider-icon3.active {
+    background: url("../../img/introduce/slider3-active.png") no-repeat center top;
+}
+
+.slider-icon4.active {
+    background: url("../../img/introduce/slider4-active.png") no-repeat center top;
+}
+
+.slider-icon5.active {
+    background: url("../../img/introduce/slider5-active.png") no-repeat center top;
+}
+
+.txtbox {
+    padding-top: 226px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.txtbox h3 {
+    font-size: 90px;
+    font-style: italic;
+    text-shadow: 2px 2px 3px #222;;
+}
+
+.txtbox h4 {
+    font-size: 26px;
+    padding: 5px 0;
+}
+
+.txtbox h5 {
+    font-size: 16px;
+}
+
+
+
+
+
+
+

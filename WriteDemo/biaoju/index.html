@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>飙局官网 - 商标查询</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<style>
+			.a-help:hover {
+				color: #2165e3;
+			}
+			
+			.footer {
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				background: #fff;
+			}
+			
+			.d-footer .footer {
+				/*width: 1180px;*/
+			}
+			
+			.fix-right {
+				z-index: 2;
+			}
+			
+			.icon-new {
+				top: -3px;
+				right: -29px;
+			}
+			
+			.index-list {
+				width: 585px;
+				margin-right: 10px;
+			}
+			
+			.index-table {
+				position: absolute;
+				top: 50%;
+				padding-top: 0;
+			}
+			
+			.index-table .index-table_1 {
+				position: relative;
+				margin-top: -25%;
+			}
+			
+			.index-search2 select {
+				width: 115px;
+			}
+			
+			.address-box input {
+				width: 360px !important;
+			}
+			
+			.ietips {
+				color: #fff;
+				background: #fc6c00;
+				height: 30px;
+				line-height: 30px;
+				position: fixed;
+				top: 46px;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				z-index: 9999;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="ietips">
+			尊敬的用户,飙局于即日起开始不再保障IE8浏览器下的可用性。建议您尽快升级浏览器，或者使用Chrome、Firefox。
+		</div>
+		<div id="body" class="activeAnimate">
+			<div class="header header-index">
+				<div class="clearfix" style="width: 1184px;margin: 0 auto;">
+					<a href="/" class="logo"><img src="img/index/header-logo.png" class="fl"></a>
+					<div class="nav fl">
+						<ul>
+							<li class="active">
+								<a href="/">商标查询</a>
+							</li>
+							<li class="">
+								<a href="/analysis/index/">商标分析</a>
+							</li>
+							<li class="">
+								<a href="/monitor/prompt/">商标监测</a>
+							</li>
+							<li class="">
+								<a href="/notice/index/">商标公告</a>
+							</li>
+							<li class="">
+								<a href="/manage/archives/" id="guanjialogin">商标管理</a>
+								<i class="icon-manage"></i></li>
+							<li>
+								<a href="" target="_blank">商标交易</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header-right fr">
+						<!---->
+						<div class="logininfo fl">
+							<a href="/login/index" class="login-denglu fl">登录</a>
+							<a href="/login/register/" class="login-denglu fl" style="padding-left: 10px;">注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index-content">
+				<div class="index-table">
+					<div class="index-table_1">
+						<div class="high-logo" style="height: 110px;">
+							<img style="vertical-align: inherit" src="img/index/logo_bg.png" alt="关于商标，全知全能-飙局"> </div>
+						<div class="index-box clearfix" id="indexSearch">
+							
+							<div class="index-list fl">
+								<div class="index-search-box active">
+									<form action="/trademark/index/" method="get" class="index-search index-search1">
+										<!--<span class="placeholder"  data-tip="商标名称不能为空!">请输入商标名称</span>--><input type="text" class="btn-indexsearch" value="" placeholder="请输入商标名称" data-tip="商标名称不能为空!"> <button type="button" style="cursor: pointer;">搜 索</button> </form>
+									<div class="history" style="display: none;">
+										<ul></ul>
+									</div>
+								</div>
+							</div>
+							<div class="high-link fr">
+								<a href="/index/more/" id="indexMoreButt">高级搜索</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<ul class="clearfix">
+					<li>
+						<a href="/introduce/survey/" target="_blank">产品介绍</a>
+					</li>
+					<li>
+						<a href="/introduce/manage1/" target="_blank">商标管理介绍</a>
+					</li>
+					<li>
+						<a href="/introduce/history/" target="_blank">成长事记</a>
+					</li> <span class="fr" style="color: #999;">©2017 飙局</span> </ul>
+			</div>
+			<div class="fix-right">
+				<a href="javascript:void(0);" class="feedback mj-fees" id="jFanKui"><i class="icon20"></i>反馈</a>
+				<a href="javascript:void(0);" class="backtop" style="display: none;"><i class="icon19"></i>顶部</a>
+			</div>
+		</div>
+	</body>
+
+</html>
