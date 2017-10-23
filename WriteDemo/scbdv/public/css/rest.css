@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,p,h1,h2,h3,h4,h5,h6,br,hr,ul,ol,li,dl,dt,dd,bdo,blockquote,cite,code,del,dfn,em,i,ins,kbd,pre,q,samp,small,sub,sup,table,tr,th,td,caption,col,colgroup,tfoot,thead,address,area,base,img,a,map,form,input,fieldset,button,label,leqend,optqroup,option,select,textarea,noscript,object,param,article,aside,audio,bdi,canvas,command,datalist,details,embed,figure,figcaption,footer,header,hgroup,keyqen,mark,menu,meter,output,proqress,rp,rt,ruby,section,source,summary,time,track,video{ margin:0; padding:0; font-family: "微软雅黑";}
+img{ border:none; vertical-align:top; }
+b,i{ font-style:normal;}
+ul,ol,li{ list-style:none; }
+a{ text-decoration:none;  }
+a:hover{ text-decoration:none;}
+input,select,textarea{ outline:none; } 
+textarea{ resize:none; overflow:auto; }
+table{ border-collapse:collapse; }
+button,input[type="reset"],input[type="button"],input[type="submit"]{ line-height:normal !important; }
+.clearfix:after{ display:block; clear:both; content:""; visibility:hidden; height:0; }
+.clearfix{ zoom:1;}
+
+
+

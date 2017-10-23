@@ -1,0 +1,225 @@
+[Root]
+Most Recent Package=标准安装软件包 2
+
+
+[Package|标准安装软件包 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\QT\包
+
+[Package|标准安装软件包 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|标准安装软件包 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|标准安装软件包 1|Files Found]
+
+[Package|标准安装软件包 1|Files Released]
+
+[Package|标准安装软件包 1|Missing Dependency Information]
+C:\WINNT\system32\Macromed\Flash\Flash8a.ocx=
+
+[Package|标准安装软件包 1|Out-of-Date Dependency Information]
+C:\WINNT\system32\MSWINSCK.OCX=
+
+[Package|标准安装软件包 1|Files Added]
+e:\qt\unzip.exe=
+e:\qt\102.r=
+E:\QT\Set.ini=
+
+[Package|标准安装软件包 1|Files Removed]
+
+[Package|标准安装软件包 1|Files In Project]
+E:\QT\QQP.exe=Yes
+C:\WINNT\system32\msvbvm60.dll=Yes
+C:\WINNT\system32\oleaut32.dll=Yes
+C:\WINNT\system32\olepro32.dll=Yes
+C:\WINNT\system32\asycfilt.dll=Yes
+C:\WINNT\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\VB6CHS.DLL=Yes
+C:\WINNT\system32\Macromed\Flash\Flash8a.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINNT\system32\MSWINSCK.OCX=Yes
+C:\WINNT\system32\WINSKCHS.DLL=Yes
+E:\QT\UnZip.exe=Yes
+E:\QT\102.r=Yes
+E:\QT\Set.ini=Yes
+
+[Package|标准安装软件包 1|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 1|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 1|Install Locations]
+E:\QT\QQP.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\VB6CHS.DLL=$(WinSysPath)
+C:\WINNT\system32\Macromed\Flash\Flash8a.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINNT\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINNT\system32\WINSKCHS.DLL=$(WinSysPath)
+E:\QT\UnZip.exe=$(AppPath)
+E:\QT\102.r=$(AppPath)
+E:\QT\Set.ini=$(AppPath)
+
+[Package|标准安装软件包 1|Configure Shared Files]
+Applicable=Yes
+E:\QT\QQP.exe=No
+E:\QT\UnZip.exe=No
+E:\QT\102.r=No
+E:\QT\Set.ini=No
+
+[Package|标准安装软件包 1|Distribution]
+Type=single
+Size=
+Title=QPT
+
+[Package|标准安装软件包 1|Package]
+PackageFolder=E:\QT\包
+ProjectFolder=E:\QT
+ServerSideCab=
+File1=E:\QT\包\setup.exe
+File2=E:\QT\包\Setup.Lst
+File3=E:\QT\包\QQP.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|标准安装软件包 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\HT\包
+
+[Package|标准安装软件包 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|标准安装软件包 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|标准安装软件包 2|Files Found]
+102.r=E:\HT\主程序\102.r
+
+[Package|标准安装软件包 2|Files Released]
+
+[Package|标准安装软件包 2|Missing Dependency Information]
+C:\WINNT\system32\Macromed\Flash\Flash8a.ocx=
+C:\WINDOWS\system32\Flash8a.ocx=
+
+[Package|标准安装软件包 2|Out-of-Date Dependency Information]
+C:\WINNT\system32\MSCOMCTL.OCX=
+C:\WINNT\system32\MSWINSCK.OCX=
+C:\WINDOWS\system32\MSCOMCTL.OCX=
+C:\WINDOWS\system32\MSWINSCK.OCX=
+
+[Package|标准安装软件包 2|Files Added]
+unzip.exe=
+102.r=
+set.ini=
+
+[Package|标准安装软件包 2|Files Removed]
+
+[Package|标准安装软件包 2|Files In Project]
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\HT\主程序\QQP.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\WINDOWS\system32\VB6CHS.DLL=Yes
+C:\WINDOWS\system32\Flash8a.ocx=Yes
+C:\WINDOWS\system32\MSWINSCK.OCX=Yes
+C:\WINDOWS\system32\Winskchs.dll=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSCMCCHS.DLL=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+E:\HT\主程序\UnZip.exe=Yes
+E:\HT\主程序\102.r=Yes
+E:\HT\主程序\Set.ini=Yes
+
+[Package|标准安装软件包 2|Configure Registry Files]
+Applicable=No
+
+[Package|标准安装软件包 2|Configure Remote Servers]
+Applicable=No
+
+[Package|标准安装软件包 2|Install Locations]
+E:\HT\QQP.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\VB6CHS.DLL=$(WinSysPath)
+C:\WINNT\system32\Macromed\Flash\Flash8a.ocx=$(WinSysPath)
+C:\WINNT\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINNT\system32\WINSKCHS.DLL=$(WinSysPath)
+C:\WINNT\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINNT\system32\MSCMCCHS.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\HT\UnZip.exe=$(AppPath)
+E:\HT\102.r=$(AppPath)
+E:\HT\Set.ini=$(AppPath)
+E:\HT\主程序\QQP.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\WINDOWS\system32\VB6CHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\Flash8a.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+C:\WINDOWS\system32\Winskchs.dll=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCMCCHS.DLL=$(WinSysPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+E:\HT\主程序\UnZip.exe=$(AppPath)
+E:\HT\主程序\102.r=$(AppPath)
+E:\HT\主程序\Set.ini=$(AppPath)
+
+[Package|标准安装软件包 2|Configure Shared Files]
+Applicable=Yes
+E:\HT\QQP.exe=No
+E:\HT\UnZip.exe=No
+E:\HT\102.r=No
+E:\HT\Set.ini=No
+E:\HT\主程序\QQP.exe=No
+E:\HT\主程序\UnZip.exe=No
+E:\HT\主程序\102.r=No
+E:\HT\主程序\Set.ini=No
+
+[Package|标准安装软件包 2|Distribution]
+Type=single
+Size=
+Title=工程1
+
+[Package|标准安装软件包 2|Package]
+PackageFolder=E:\HT\包
+ProjectFolder=E:\HT\主程序
+ServerSideCab=
+File1=E:\HT\包\setup.exe
+File2=E:\HT\包\Setup.Lst
+File3=E:\HT\包\QQP.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
