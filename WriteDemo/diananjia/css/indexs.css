@@ -1,0 +1,220 @@
+.online-rmd a {
+	width: 100%;
+	display: block;
+}
+.online-rmd img {
+	width: 100%;
+}
+
+
+/*正文网店推荐、网店测评、新闻资讯标题*/
+.content-common1 h3 {
+  font-size: 18px;
+  float: left;
+  position: relative;
+  text-indent: 42px;
+  line-height: 30px;
+  color: #666;
+  font-weight: normal; }
+  .content-common1 h3 span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../icon/index_icon.png) no-repeat -144px -1px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+/*正文网店推荐、新闻资讯导航*/
+.content-common2 {
+  text-align: center;
+  float: right;
+  position: relative;
+  line-height: 30px; }
+  .content-common2 ul {
+    overflow: hidden; }
+    .content-common2 ul a {
+      display: block;
+      float: left;
+      margin-left: 24px;
+      color: #888;
+      font-weight: 600; }
+      .content-common2 ul a:hover {
+        color: #ff6700; }
+  .content-common2 li {
+    display: block;
+    float: left;
+    margin-left: 24px; }
+    .content-common2 li:hover {
+      color: #ff6700; }
+  .content-common2 .line {
+    position: absolute;
+    left: 0;
+    top: 29px;
+    display: block;
+    height: 2px;
+    margin-left: 24px;
+    background: #ff6700; }
+  .content-common2 .activeli {
+    color: #ff6700; }
+
+.rmd-onlineshop {
+  margin-top: 30px;
+  /*左侧广告*/ }
+  .rmd-onlineshop .container {
+    overflow: hidden; }
+  .rmd-onlineshop .rmd-ad {
+    float: left;
+    margin-top: 16px; }
+    .rmd-onlineshop .rmd-ad img {
+      width: 239px;
+      height: 440px; }
+  .rmd-onlineshop .rmd-navsub {
+    display: none;
+    float: left;
+    width: 960px;
+    height: 440px;
+    margin-top: 16px;
+    overflow: hidden;
+    position: relative; }
+    .rmd-onlineshop .rmd-navsub .index-btn {
+      display: block;
+      width: 32px;
+      height: 70px;
+      top: 185px;
+      z-index: 20;
+      position: absolute;
+      cursor: pointer;
+      display: none; }
+    .rmd-onlineshop .rmd-navsub .index-btnprev {
+      background: #e2e7e9 url(../icon/index-btnprev.png) no-repeat center;
+      left: 0; }
+    .rmd-onlineshop .rmd-navsub .index-btnnext {
+      background: #e2e7e9 url(../icon/index-btnnext.png) no-repeat center;
+      right: 0; }
+    .rmd-onlineshop .rmd-navsub ul {
+      float: left; }
+    .rmd-onlineshop .rmd-navsub li {
+      padding: 10px;
+      padding-bottom: 15px;
+      width: 320px;
+      height: 220px;
+      box-sizing: border-box;
+      color: #666;
+      position: relative;
+      border: 1px solid #dcdcdc;
+      border-left: 1px solid #fff;
+      cursor: pointer; }
+      .rmd-onlineshop .rmd-navsub li:hover {
+        border: 1px solid #ff6700; }
+      .rmd-onlineshop .rmd-navsub li:hover h5 {
+        color: #cf0610; }
+      .rmd-onlineshop .rmd-navsub li img {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 80px;
+        height: 80px; }
+    .rmd-onlineshop .rmd-navsub .top {
+      border-bottom: 1px solid #fff; }
+    .rmd-onlineshop .rmd-navsub a {
+      display: block;
+      overflow: hidden; }
+      .rmd-onlineshop .rmd-navsub a span {
+        background: url(../icon/index_icon.png) no-repeat -217px -1px;
+        display: block;
+        width: 18px;
+        height: 18px;
+        float: left; }
+    .rmd-onlineshop .rmd-navsub h5 {
+      color: #333;
+      float: left;
+      color: #333;
+      font-size: 14px;
+      width: 270px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      overflow: hidden;
+      margin-left: 6px; }
+    .rmd-onlineshop .rmd-navsub .shoptype {
+      margin: 12px 0 9px 0; }
+    .rmd-onlineshop .rmd-navsub .label {
+      margin: 9px 0; }
+    .rmd-onlineshop .rmd-navsub .sellpoints {
+      overflow: hidden;
+      margin-bottom: 16px; }
+      .rmd-onlineshop .rmd-navsub .sellpoints span {
+        display: block;
+        width: 64px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        float: left;
+        color: #fff;
+        margin-right: 8px;
+        /*  white-space:nowrap; 
+          text-overflow:ellipsis;
+          -o-text-overflow:ellipsis;
+          overflow:hidden;*/ }
+      .rmd-onlineshop .rmd-navsub .sellpoints .short {
+        background: #b61c21; }
+      .rmd-onlineshop .rmd-navsub .sellpoints .exclusive {
+        background: #ff6700; }
+      .rmd-onlineshop .rmd-navsub .sellpoints .profit {
+        background: #33cc66; }
+    .rmd-onlineshop .rmd-navsub .price span {
+      color: #ff6700;
+      font-size: 30px;
+      font-weight: bold; }
+  .rmd-onlineshop .tmall-navsub {
+    display: none;
+    height: 350px; }
+    .rmd-onlineshop .tmall-navsub ul {
+      overflow: hidden; }
+    .rmd-onlineshop .tmall-navsub li {
+      height: 350px;
+      display: block;
+      float: left; }
+    .rmd-onlineshop .tmall-navsub .price {
+      position: absolute;
+      bottom: 15px;
+      left: 10px; }
+    .rmd-onlineshop .tmall-navsub .tmallname {
+      color: #cf0610;
+      margin-top: 17px; }
+      .rmd-onlineshop .tmall-navsub .tmallname span {
+        color: #cf0610; }
+    .rmd-onlineshop .tmall-navsub .font14 {
+      font-size: 14px;
+      line-height: 30px; }
+    .rmd-onlineshop .tmall-navsub .font12 {
+      font-size: 12px;
+      line-height: 30px; }
+    .rmd-onlineshop .tmall-navsub .tmallfirst {
+      width: 280px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      overflow: hidden; }
+    .rmd-onlineshop .tmall-navsub .tmalldsc {
+      line-height: 18px; }
+    .rmd-onlineshop .tmall-navsub span {
+      color: #333; }
+    .rmd-onlineshop .tmall-navsub .afterlogin {
+      color: #fff;
+      background: #33cc66;
+      width: 135px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      font-size: 12px;
+      margin-top: 21px;
+      cursor: pointer; }
+  .rmd-onlineshop .on {
+    display: block; }
+
+.tmallshop .rmd-ad img {
+  width: 239px;
+  height: 350px; }
+

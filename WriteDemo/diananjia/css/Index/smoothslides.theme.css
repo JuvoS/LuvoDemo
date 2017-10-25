@@ -1,0 +1,171 @@
+/* Outer Container */
+.smoothslides, .smoothslides-on {
+	position:relative;
+	font-size:0;
+	line-height: 0;
+	min-height: 40px;
+	border-radius: 6px;
+}
+/* Outer Container Background (visible while loading) */
+.smoothslides {
+	background:rgba(255,255,255,.5);
+}
+/* Hide images until loaded */
+.smoothslides img {
+	display:none;
+}
+
+
+/* Loading animation */
+.smoothslides:before {
+	content:'';
+	position: absolute;
+	width:8px;
+	height:8px;
+	left:50%;
+	top:50%;
+	margin-left:-4px;
+	margin-top:-4px;
+	border-radius:15px;
+	border:2px solid #000;
+	
+}
+
+/* wrapper around all slides */
+.ss-slide-stage {
+	position: relative;
+	overflow: hidden;
+	
+	/* This fixes the bug in chrome where border-radius doesn't work with overflow hidden */
+	-webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+/* wrapper around each slide */
+.ss-slide {
+	position: absolute;
+	top:0;
+	left:0;
+	transform-origin:center;
+	display: block;
+	width:100%;
+	zoom: 1;
+}
+.ss-slide img{
+	height:auto;
+	/* max-width, or width gets set via JS */
+}
+/* Caption wrapper. Used for centering */
+.ss-caption-wrap {
+	position: absolute;
+	bottom:0;
+	width:100%;
+	padding:0 5px 5px 5px;
+	text-align:center;
+	box-sizing:border-box;
+}
+
+/* Caption */
+.ss-caption {
+	min-height:50px;
+	background:rgb(255,255,255);
+	background: rgba(255, 255, 255, 0.87);
+	color: #5A5A5A;
+	text-shadow: 0 0 10px #fff;
+	font-size:14px;
+	font-weight: bold;
+	line-height: 1.4em;
+	border-radius:3px;
+	padding-top:15px;
+
+}
+
+/* Previous and Next buttons */
+.smoothslides-on a.ss-prev, .smoothslides-on a.ss-next {
+	
+}
+
+.smoothslides-on  a.ss-next {
+	left:auto;
+	right:5px;
+}
+/* Highlight nav btns when hovering over the slideshow */
+.smoothslides-on:hover .ss-prev, .smoothslides-on:hover .ss-next {
+	opacity: 1;
+}
+
+.smoothslides-on .ss-prev:hover, .smoothslides-on .ss-next:hover {
+	background:#fff;	
+	color:#000;
+}
+
+/* Pagination wrapper. Used for centering */
+.ss-paginate-wrap {
+	position: absolute;
+	bottom:10px;
+	width:100%;
+	text-align:center;
+}
+.ss-paginate {
+	display: inline-block;
+	line-height: 0;
+}
+/* Pagination dots */
+.ss-paginate a:link, .ss-paginate a:visited {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: 0 5px;
+	background:#ccc;
+	background: rgba(255,255,255,.1);
+	border: 2px solid #fff;
+	transition: .3s;
+}
+.ss-paginate a:hover {
+	background:#ddd;
+	background:rgba(255,255,255,.3);
+}
+.ss-paginate a.ss-paginate-current {
+	background:#000;
+	background: rgba(255,255,255,.7);
+}
+
+/* changes for smaller screens */
+@media (max-width: 600px) {
+	.ss-paginate-wrap {
+		bottom:-35px;
+	}
+	.ss-caption {
+		min-height:0;
+		padding:5px;
+		font-size:12px;
+	}
+	a.ss-prev, a.ss-next {
+		bottom:auto;
+		top:50%;
+		margin-top:-25px;
+		color:#000;
+		background:rgba(255,255,255,.3);
+		color:#444;
+	}
+	.smoothslides-on, .ss-slide-stage {
+		border-radius:0;
+	}
+}
+
+/*.multipleColumn{ overflow:hidden; position:relative; width:870px;   }
+.multipleColumn .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+.multipleColumn .hd .prev,.multipleColumn .hd .next{ display:block;  width:5px; height:9px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+	 cursor:pointer; background:url("images/icoLeft.gif") no-repeat;}
+.multipleColumn .hd .next{ background:url("images/icoRight.gif") no-repeat;  }
+.multipleColumn .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+.multipleColumn .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("images/icoCircle.gif") 0 -9px no-repeat; }
+.multipleColumn .hd ul li.on{ background-position:0 0; }
+
+.multipleColumn .bd{ overflow:hidden;  }
+.multipleColumn .bd ul{ overflow:hidden; zoom:1; width:320px;  float:left; _display:inline;  }
+.multipleColumn .bd ul li{float:left; _display:inline; overflow:hidden; text-align:left;  }
+.multipleColumn .bd ul li .pic{ text-align:center; }
+.multipleColumn .bd ul li .pic img{ width:120px; height:90px; display:block;  padding:2px; border:1px solid #ccc; }
+.multipleColumn .bd ul li .pic a:hover img{ border-color:#999;  }
+.multipleColumn .bd ul li .title{ line-height:24px;   }*/
